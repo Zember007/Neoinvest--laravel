@@ -15,12 +15,10 @@ document.addEventListener("DOMContentLoaded", function() {
     handleClick(e) {
 
       if (this.$dd.classList.contains("select")) {
-        const selectedItem = this.$dd.querySelector(".selected"),
-              clickedItem = e.target.closest(".dd-item"),
-              input = this.$dd.querySelector(".dd-input");
+        const clickedItem = e.target.closest(".dd-item"), 
+              input = this.$dd.querySelector(".dd-input"); 
         
         if (clickedItem) {
-          selectedItem.innerHTML = clickedItem.innerHTML;
           input.value = clickedItem.dataset.value;
         }
       }
