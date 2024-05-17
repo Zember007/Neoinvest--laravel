@@ -1,0 +1,27 @@
+<?php
+
+return [
+    'your_partners' => 'Your partners',
+    'your_mentor' => 'Your mentor',
+    'by_line' => 'Along the line',
+    'on_star' => 'By level',
+    'line_cap' => 'Line',
+    'line' => 'line',
+    'on_line' => 'on :line line',
+    'with_star' => 'with :star level',
+    'contacts' => 'Contacts',
+    'phone' => 'Telephone',
+    'star_lowercase' => 'level',
+    'mentor' => 'Mentor',
+    'turnover' => 'Structure turnover',
+    'director' => 'VIP',
+    'history' => 'History',
+    'history_empty' => 'Affiliate program operation history is missing',
+    'you_have_received_bonus_from' => 'You have received a referral bonus from',
+    'your_star_increased' => 'Your referral level has been increased',
+    'no_partners' => 'You have no partners',
+    'no_partners_description' => 'As soon as you have partners, they will be displayed in the list',
+    'title' => 'Partners',
+    'star' => 'Level',
+    'name' => 'Partner',
+];

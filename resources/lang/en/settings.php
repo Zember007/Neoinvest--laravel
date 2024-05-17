@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'upload_photo' => 'Upload a photo',
+    'delete_photo' => 'Delete photo',
+    'max_size' => 'Limitations: Maximum 10 MB.',
+    'max_dim' => 'Recommended size: 500x500 pixels',
+    'contact_info' => 'Contact Information',
+    'contact_info_hint' => 'The specified phone number will be displayed for your mentor and your partners',
+    'security' => 'Security',
+    'change_password' => 'Change password',
+    'connect' => 'Enable',
+    'disconnect' => 'Disable',
+    'profile_picture' => 'Profile picture',
+    'personal_details' => 'Personal data',
+    'current_password_mismatch' => 'The entered current password is incorrect',
+    'current_password' => 'Current password',
+    'new_password' => 'New Password',
+    'confirmation_code' => 'confirmation code',
+    'confirm_changes' => 'Confirm the changes',
+    'saved_successfully' => 'Settings saved successfully!',
+    'title' => 'Settings',
+    '2fa' => '2FA authentication',
+    'manual_2fa' => 'Connect manually',
+];

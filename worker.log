@@ -1,0 +1,2141 @@
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+  3   [internal]:0
+
+      Composer\Autoload\ClassLoader::loadClass()
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+
+  4   [internal]:0
+      spl_autoload_call()
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../../app/Http/Controllers/ProcessCashmostWebhook.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  4   [internal]:0
+      spl_autoload_call()
+
+   ErrorException 
+
+  include(/var/www/neoinvest/vendor/composer/../shakurov/coinbase/src/CoinbaseServiceProvider.php): failed to open stream: No such file or directory
+
+  at /var/www/neoinvest/vendor/composer/ClassLoader.php:444
+    440▕  * Prevents access to $this/self from included files.
+    441▕  */
+    442▕ function includeFile($file)
+    443▕ {
+  ➜ 444▕     include $file;
+    445▕ }
+    446▕
+
+      [2m+2 vendor frames [22m
+  3   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+      [2m+8 vendor frames [22m
+  12  /var/www/neoinvest/artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
