@@ -611,7 +611,7 @@ progress {
     .container-md,
     .container-sm,
     .container-xl {
-        max-width: 1236px
+        max-width: 1200px
     }
 }
 
@@ -7327,7 +7327,7 @@ h3 {
 
 .input__error {
     color: #c95555;
-    display: none;
+    /* display: none; */ 
     font-size: 14px;
     margin-top: 4px
 }
@@ -10470,9 +10470,16 @@ h3 {
     margin-bottom: 33px
 }
 
-.register__submit {
+.register__submit-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
     margin-top: 12px;
-    min-width: 340px
+}
+
+.register__submit {
+    min-width: 340px;
 }
 
 .register__sidebar {

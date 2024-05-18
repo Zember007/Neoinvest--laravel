@@ -1,4 +1,519 @@
 <!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>WorldSmart - Главная</title>
+  <meta name="description" content="#">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:title" content="#">
+  <meta property="og:description" content="#">
+  <meta property="og:image" content="#">
+  <meta property="og:image:width" content="400">
+  <meta property="og:image:height" content="210">
+  <meta property="og:image:type" content="image/png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="#">
+  <meta property="og:locale" content="ru_RU">
+  <link rel="icon" href="/img/new/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/new/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/new/favicons/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/new/favicons/apple-touch-icon.png">
+  <link rel="manifest" href="/img/new/favicons/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="libs/swiper-bundle.min.css"> 
+  <link rel="stylesheet" href="{{ asset('css/new/app.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/new/style.promo.css') }}">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="row g-0 align-items-center justify-content-between">
+        <div class="col-auto">
+          <div class="header__main">
+            <button class="sandwich header__sandwich js-toggle-menu">
+              <span class="sandwich__inner"></span>
+            </button>
+            <a href="/" class="logo header__logo">
+              <img src="/img/new/logo-accent.svg" alt="World Smart" class="logo__img">
+            </a> 
+            @include('layouts.partials.header.lang')
+            </nav>
+          </div>
+        </div>
+        <div class="col-auto">
+          <div class="header__controls"> 
+            <a href="{{ route('login') }}" class="btn btn-small btn-fill-transparent header__controls-link">
+              <img src="/img/new/icons/icon-user-accent.svg" alt="alt" class="d-none d-md-block link__icon">
+              <div class="link__title">Войти</div>
+            </a>
+            <a href="{{ route('register') }}" class="btn btn-small btn-fill-white header__controls-btn">Регистрация</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="timer">
+      <div class="container">
+        <div class="timer__wrap">
+          <h2 class="timer__title">
+            До запуска проекта 
+          </h2>
+          <div class="timer__items">
+            <div class="timer__item timer__days">00</div>
+            <div class="timer__item timer__hours">00</div>
+            <div class="timer__item timer__minutes">00</div>
+            <div class="timer__item timer__seconds">00</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="invest">
+      <div class="container">
+        <!-- <div class="invest__top">
+          <div class="invest__top-title">
+            <h1>Инвестируй сегодня. Будь уверен в завтра.</h1>
+          </div>
+          <a href="#" class="btn btn-round btn-round-small invest__top-btn">Инвестировать</a>
+        </div> -->
+        <div class="slider invest__slider">
+          <div class="slider__btns invest__slider-btns">
+            <button class="slider__btn slider__btn-prev js-invest-carousel-prev"></button>
+            <button class="slider__btn slider__btn-next js-invest-carousel-next"></button>
+          </div>
+          <div class="swiper invest__carousel js-invest-carousel">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="invest-slide">
+                  <div class="invest-slide__content">
+                    <div class="h2 invest-slide__title">Стань частью World Smart и получи уникальные бонусы!<br>Количество регистраций ограничено</div>
+                    <div class="invest-slide__descr">Ознакомьтесь с вариантами инвестиций, которые мы предлагаем партнерам</div>
+                  </div>
+                  <img src="/img/new/example/invest-img.png" alt="alt" class="invest-slide__image">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="invest-slide">
+                  <div class="invest-slide__content">
+                    <div class="h2 invest-slide__title">ТОП-4 направлений инвестиций в 2024</div>
+                    <div class="invest-slide__descr">Ознакомьтесь с вариантами инвестиций, которые мы предлагаем партнерам</div>
+                  </div>
+                  <img src="/img/new/example/invest-img.png" alt="alt" class="invest-slide__image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="invest__advantages">
+          <div class="element-blur advantage invest-advantage">
+            <img src="/img/new/icons/icon-sale-round-accent.svg" alt="alt" class="advantage__img">
+            <div class="advantage__title">Ежедневное начисление процентов</div>
+          </div>
+          <div class="element-blur advantage invest-advantage">
+            <img src="/img/new/icons/icon-exchange-round-accent.svg" alt="alt" class="advantage__img">
+            <div class="advantage__title">24/7 вывод начисленных средств</div>
+          </div>
+          <div class="element-blur advantage invest-advantage">
+            <img src="/img/new/icons/icon-world-round-accent.svg" alt="alt" class="advantage__img">
+            <div class="advantage__title">Работаем по всему миру</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="advantages js-tabs">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="advantages__left">
+              <div class="advantages__content">
+                <div class="advantages__title">
+                  <h2>Оцените преимущества</h2>
+                </div>
+                <div class="advantages__descr">Мы перечислили лишь самые весомые преимущества, как для инвесторов, так и для партнеров, которые обеспечивают инвестиционный успех</div>
+              </div>
+              <div class="advantages__tabs">
+                <button class="advantages__tabs-item js-tabs-control active">Для инвесторов</button>
+                <button class="advantages__tabs-item js-tabs-control">Для партнеров</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="advantages__blocks">
+              <div class="advantages__block js-tabs-content">
+                <div class="advantages__items">
+                  <div class="element-blur advantage advantage-square advantages__items-element">
+                    <img src="/img/new/icons/icon-choise-round-accent.svg" alt="alt" class="advantage__img">
+                    <div class="advantage__title">Ежедневное начисление процентов</div>
+                  </div>
+                  <div class="element-blur advantage advantage-square advantages__items-element">
+                    <img src="/img/new/icons/icon-profit-round-accent.svg" alt="alt" class="advantage__img">
+                    <div class="advantage__title">Высокая доходность вложенных средств</div>
+                  </div>
+                  <div class="element-blur advantage advantage-square advantages__items-element">
+                    <img src="/img/new/icons/icon-def-round-accent.svg" alt="alt" class="advantage__img">
+                    <div class="advantage__title">Многоуровневая защита капитала</div>
+                  </div>
+                  <div class="element-blur advantage advantage-square advantages__items-element">
+                    <img src="/img/new/icons/icon-safety-round-accent.svg" alt="alt" class="advantage__img">
+                    <div class="advantage__title">Юридическая безопасность деятельности</div>
+                  </div>
+                  <div class="element-blur advantage advantage-square advantages__items-element">
+                    <img src="/img/new/icons/icon-ecosystem-round-accent.svg" alt="alt" class="advantage__img">
+                    <div class="advantage__title">Развитая экосистема инвестирования</div>
+                  </div>
+                  <div class="element-blur advantage advantage-square advantages__items-element">
+                    <img src="/img/new/icons/icon-account-round-accent.svg" alt="alt" class="advantage__img">
+                    <div class="advantage__title">Удобный личный кабинет инвестора</div>
+                  </div>
+                </div>
+              </div>
+              <div class="advantages__block js-tabs-content">
+                <div class="advantages__items">
+                  <div class="element-blur advantage advantage-square advantages__items-element">
+                    <img src="/img/new/icons/icon-pa-round-accent.svg" alt="alt" class="advantage__img">
+                    <div class="advantage__title">Личный кабинет партнера</div>
+                  </div>
+                  <div class="element-blur advantage advantage-square advantages__items-element">
+                    <img src="/img/new/icons/icon-support-round-accent.svg" alt="alt" class="advantage__img">
+                    <div class="advantage__title">Поддержка и обучение с наставником</div>
+                  </div>
+                  <div class="element-blur advantage advantage-square advantages__items-element">
+                    <img src="/img/new/icons/icon-ref-round-accent.svg" alt="alt" class="advantage__img">
+                    <div class="advantage__title">Единое реферальное дерево</div>
+                  </div>
+                  <div class="element-blur advantage advantage-square advantages__items-element">
+                    <img src="/img/new/icons/icon-shield-round-accent.svg" alt="alt" class="advantage__img">
+                    <div class="advantage__title">8 видов выгодных бонусов</div>
+                  </div>
+                  <div class="element-blur advantage advantage-square advantages__items-element">
+                    <img src="/img/new/icons/icon-target-round-accent.svg" alt="alt" class="advantage__img">
+                    <div class="advantage__title">Развитая экосистема платформы</div>
+                  </div>
+                  <div class="element-blur advantage advantage-square advantages__items-element">
+                    <img src="/img/new/icons/icon-clear-round-accent.svg" alt="alt" class="advantage__img">
+                    <div class="advantage__title">Прозрачность и отчетность</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="products">
+      <div class="container">
+        <div class="products__container">
+          <div class="products__top">
+            <div class="products__top-title">
+              <h2>Инвестируя в проект, на раннем этапе, Вы получаете:</h2>
+            </div>
+            <div class="products__top-descr">
+                <!-- <li>При пополнении депозита до запуска проекта, вы получите следующие преимущества:</li> -->
+                <ul>  <li>Реферальный бонус 7% после старта проекта </li></ul>
+               
+           
+              <p>- При пополнении от 100$ - 500$ бонус +15% к депозиту на старте проекта</p>
+              <p>- При пополнении от 500$ - 1000$
+                Бонус +25% к депозиту на старте проекта</p>
+              <p>- При пополнении от 1000$ - 3000$ к депозиту до старта проекта
+                Бонус Air Pods</p>
+              <p>- При пополнении депозита от 3000$ - 5000$ до старта проекта
+                Бонус IPhone 15 Pro Max</p>
+              <p>- При пополнении депозита от 5000$ - 7000$ до старта проекта
+                Бонус MacBook Pro</p>
+              <p>- При пополнении депозита от 7000$ - 10000$ до старта проекта
+                Бонус путешествие на двоих</p><br>
+              После старта проекта внесенная вами сумма будет отображаться в вашем Личном кабинете, далее вы самостоятельно принимаете решение в какой продукт инвестировать.<br><br>
+              С нашими продуктами и условиями инвестирования вы можете ознакомиться ниже.<br>
+              Первые 350 человек, которые присоединятся до старта проекта с минимальным депозитом 1500$ примут участие в первой конференции компании в ОАЭ и Доминикане ( количество людей делится на две группы,на две страны), оплачивается перелет,проживание и питание (по системе All-inclusive)
+            </div>
+          </div>
+          <div class="swiper products__elements js-products-carousel">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="element-blur product products__elements-item">
+                  <img src="/img/new/elements/products/product-1.png" alt="alt" class="product__image" loading="lazy">
+                  <div class="product__title">Starter</div>
+                  <div class="product__row">
+                    <div class="product__row-title">срок</div>
+                    <div class="product__row-descr">100 дней</div>
+                  </div>
+                  <div class="product__row">
+                    <div class="product__row-title">Инвестиция</div>
+                    <div class="product__row-descr">100$ - 5.000$</div>
+                  </div>
+                  <div class="product__row">
+                    <div class="product__row-title">Доходность</div>
+                    <div class="product__row-descr">0.5 – 0.7% в сутки</div>
+                  </div>
+                  <a href="#" class="btn btn-big btn-fill-blue product__btn">Инвестировать</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="element-blur product products__elements-item">
+                  <img src="/img/new/elements/products/product-2.png" alt="alt" class="product__image" loading="lazy">
+                  <div class="product__title">Investor</div>
+                  <div class="product__row">
+                    <div class="product__row-title">срок</div>
+                    <div class="product__row-descr">150 дней</div>
+                  </div>
+                  <div class="product__row">
+                    <div class="product__row-title">Инвестиция</div>
+                    <div class="product__row-descr">5.000$ - 30.000$</div>
+                  </div>
+                  <div class="product__row">
+                    <div class="product__row-title">Доходность</div>
+                    <div class="product__row-descr">0.7 - 1% в сутки</div>
+                  </div>
+                  <a href="#" class="btn btn-big btn-fill-blue product__btn">Инвестировать</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="element-blur product products__elements-item">
+                  <img src="/img/new/elements/products/product-3.png" alt="alt" class="product__image" loading="lazy">
+                  <div class="product__title">Gold</div>
+                  <div class="product__row">
+                    <div class="product__row-title">срок</div>
+                    <div class="product__row-descr">175 дней</div>
+                  </div>
+                  <div class="product__row">
+                    <div class="product__row-title">Инвестиция</div>
+                    <div class="product__row-descr">30.000$ - 50.000$</div>
+                  </div>
+                  <div class="product__row">
+                    <div class="product__row-title">Доходность</div>
+                    <div class="product__row-descr">1 – 1.4% в сутки</div>
+                  </div>
+                  <a href="#" class="btn btn-big btn-fill-blue product__btn">Инвестировать</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="element-blur product products__elements-item">
+                  <img src="/img/new/elements/products/product-4.png" alt="alt" class="product__image" loading="lazy">
+                  <div class="product__title">VIP</div>
+                  <div class="product__row">
+                    <div class="product__row-title">срок</div>
+                    <div class="product__row-descr">230 дней</div>
+                  </div>
+                  <div class="product__row">
+                    <div class="product__row-title">Инвестиция</div>
+                    <div class="product__row-descr">от 50.000$</div>
+                  </div>
+                  <div class="product__row">
+                    <div class="product__row-title">Доходность</div>
+                    <div class="product__row-descr">2% в сутки</div>
+                  </div>
+                  <a href="#" class="btn btn-big btn-fill-blue product__btn">Инвестировать</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="products__scrollbar js-products-carousel-scrollbar"></div>
+        </div>
+      </div>
+    </section>
+    <section class="fund">
+      <div class="container">
+        <div class="fund__title">
+          <h3>Бонусы за реферальный оборот</h3>
+        </div>
+        <div class="fund__container">
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="fund__col">
+                <div class="fund__col-title">&lt; $50 000</div>
+                <div class="fund__col-items">
+                  <div class="element-blur fund__item">
+                    <img src="/img/new/elements/fund/image-airpods.png" alt="alt" class="fund__item-image" loading="lazy">
+                    <div class="fund__item-content">
+                      <div class="fund__item-price">$ 4000</div>
+                      <div class="fund__item-info">AirPods Pro 2</div>
+                    </div>
+                  </div>
+                  <div class="element-blur fund__item">
+                    <img src="/img/new/elements/fund/image-iphone.png" alt="alt" class="fund__item-image" loading="lazy">
+                    <div class="fund__item-content">
+                      <div class="fund__item-price">$ 12 000</div>
+                      <div class="fund__item-info">IPhone 15 Pro</div>
+                    </div>
+                  </div>
+                  <div class="element-blur fund__item">
+                    <img src="/img/new/elements/fund/image-macbook.png" alt="alt" class="fund__item-image" loading="lazy">
+                    <div class="fund__item-content">
+                      <div class="fund__item-price">$ 25 000</div>
+                      <div class="fund__item-info">Macbook Pro 16 M3</div>
+                    </div>
+                  </div>
+                  <div class="element-blur fund__item">
+                    <img src="/img/new/elements/fund/image-airplane.png" alt="alt" class="fund__item-image" loading="lazy">
+                    <div class="fund__item-content">
+                      <div class="fund__item-price">$ 50 000</div>
+                      <div class="fund__item-info">Путешествие в Дубаи на 2-их</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="fund__col">
+                <div class="fund__col-title">&gt; $100 000</div>
+                <div class="fund__col-items">
+                  <div class="element-blur fund__item">
+                    <img src="/img/new/elements/fund/image-tesla.png" alt="alt" class="fund__item-image" loading="lazy">
+                    <div class="fund__item-content">
+                      <div class="fund__item-price">$ 130 000</div>
+                      <div class="fund__item-info">Автомобиль Tesla</div>
+                    </div>
+                  </div>
+                  <div class="element-blur fund__item">
+                    <img src="/img/new/elements/fund/image-merc.png" alt="alt" class="fund__item-image" loading="lazy">
+                    <div class="fund__item-content">
+                      <div class="fund__item-price">$ 290 000</div>
+                      <div class="fund__item-info">Автомобиль люкс класса</div>
+                    </div>
+                  </div>
+                  <div class="element-blur fund__item">
+                    <img src="/img/new/elements/fund/image-house.png" alt="alt" class="fund__item-image" loading="lazy">
+                    <div class="fund__item-content">
+                      <div class="fund__item-price">$ 550 000</div>
+                      <div class="fund__item-info">Апартаменты стоимостью $100 000</div>
+                    </div>
+                  </div>
+                  <div class="element-blur fund__item">
+                    <img src="/img/new/elements/fund/image-crown.png" alt="alt" class="fund__item-image" loading="lazy">
+                    <div class="fund__item-content">
+                      <div class="fund__item-price">$ 888 000</div>
+                      <div class="fund__item-info">Статус VIP (реферальная система 8%)</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="question">
+      <div class="container">
+        <div class="question__container">
+          <div class="c-white question__title">
+            <h2>Остались вопросы?</h2>
+          </div>
+          <div class="c-white question__descr">Задайте их нашему эксперту</div>
+          <form class="question__form">
+            <div class="question__form-left">
+              <label class="input question__form-field">
+                <span class="c-white input__title">Имя</span>
+                <input type="text" name="user_name" class="input__field input__big element-blur" placeholder="Представьтесь, пожалуйста">
+              </label>
+              <label class="input question__form-field">
+                <span class="c-white input__title">Электронная почта</span>
+                <input type="email" name="user_email" class="input__field input__big element-blur" placeholder="yourmail@gmail.com">
+              </label>
+              <label class="input question__form-field">
+                <span class="c-white input__title">Введите ваш вопрос</span>
+                <textarea name="user_text" id="" class="input__field input__big element-blur" placeholder="Ваш вопрос"></textarea>
+              </label>
+            </div>
+            <div class="question__form-right">
+              <button class="btn btn-round btn-round-middle btn-round-white question__form-submit">
+                <span class="text-grad">Свяжитесь со мной</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <div class="footer__content">
+              <a href="/" class="logo footer__content-logo">
+                <img src="/img/new/logo-accent.svg" alt="World Smart" class="logo__img">
+              </a>
+              <div class="footer__content-descr">
+                Международная инвестиционная платформа с реальными отзывами
+              </div>
+              <div class="socials footer__content-socials">
+                <a href="#" class="socials__item socials__item-telegram" target="_blank"></a>
+                <a href="#" class="socials__item socials__item-instagram" target="_blank"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="footer__col">
+              <div class="footer__col-title">Навигация</div>
+              <div class="footer__col-content">
+                <nav class="footer__col-nav">
+                  <ul>
+                    <li><a href="main.html">Главная</a></li>
+                    
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="footer__col">
+              <div class="footer__col-title">Пользователям</div>
+              <div class="footer__col-content">
+                <nav class="footer__col-nav">
+                  <ul>
+                    <li><a href="account.html">Личный кабинет</a></li>
+                   
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="footer__col">
+              <div class="footer__col-title">Связь с нами и подписка</div>
+              <div class="footer__col-content">
+                <a href="tel:+780444200420" class="link link-default footer__col-phone">+78 044 420 0 420</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-md-3">
+            <div class="footer__bottom-policy">2024 © Все права защищены</div>
+          </div>
+          <div class="col-6 col-md-3">
+            <a href="policy.html" class="link link-default-lt footer__bottom-link">Политика конфидиенцальности</a>
+          </div>
+          <div class="col-6 col-md-3">
+            <a href="cookie.html" class="link link-default-lt footer__bottom-link">Правила использования и coockies</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{{ asset('js/new/libs.min.js') }}"></script>
+  <script src="{{ asset('js/new/common.js') }}"></script>
+  <script src="{{ asset('js/new/countdown.js') }}"></script>
+
+</body>
+
+</html>
+
+
+<!-- <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="utf-8">
@@ -6,8 +521,8 @@
     <meta name="description" content="Обучающая инвестиционная платформа с доходностью до 1,7% в сутки, бесплатными сигналами и бесплатным обучением для партнеров">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="icon" href="img/favicon.svg">
-    <link rel="icon" href="img/favicon.ico">
+    <link rel="icon" href="/img/new/favicon.svg">
+    <link rel="icon" href="/img/new/favicon.ico">
     <link rel="stylesheet" href="libs/normalize.css">
     <link rel="stylesheet" href="libs/OverlayScrollbars.min.css">
     <link rel="stylesheet" href="libs/swiper-bundle.min.css">
@@ -17,8 +532,8 @@
 
     <meta property="og:title" content="Инвестиционная обучающая платформа Neo-Invest" />
     <meta property="og:description" content="Обучающая инвестиционная платформа с доходностью до 1,7% в сутки, бесплатными сигналами и бесплатным обучением для партнеров" />
-    <meta property="og:image" content="/img/promo.png">
-    <meta property="og:image:secure_url" content="/img/promo.png">
+    <meta property="og:image" content="//img/new/promo.png">
+    <meta property="og:image:secure_url" content="//img/new/promo.png">
     <meta property="og:url" content="https://neo-invest.club">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="ru_RU">
@@ -27,28 +542,17 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZNBCJWYNP1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-ZNBCJWYNP1');
-    </script>
-
 </head>
 <body>
 
-    <!-- start page -->
     <div class="page">
 
         <div class="menu">
             <div class="menu-bg"></div>
             <div class="menu-left">
                 <div class="menu-arrows">
-                    <div class="menu-arrows__item next"><img src="img/menu-arrow.svg" alt="icon: arrow" class="img"></div>
-                    <div class="menu-arrows__item prev"><img src="img/menu-arrow.svg" alt="icon: arrow" class="img"></div>
+                    <div class="menu-arrows__item next"><img src="/img/new/menu-arrow.svg" alt="icon: arrow" class="img"></div>
+                    <div class="menu-arrows__item prev"><img src="/img/new/menu-arrow.svg" alt="icon: arrow" class="img"></div>
                 </div>
                 <div class="menu-slider swiper">
                     <div class="swiper-wrapper">
@@ -67,13 +571,13 @@
             <div class="menu-right">
                 <div class="menu-images swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide menu-img"><img data-src="img/menu/7.png" src="img/load.svg" alt="" class="img lazy"></div>
-                        <div class="swiper-slide menu-img"><img data-src="img/menu/3.png" src="img/load.svg" alt="" class="img lazy"></div>
-                        <div class="swiper-slide menu-img"><img data-src="img/menu/4.png" src="img/load.svg" alt="" class="img lazy"></div>
-                        <div class="swiper-slide menu-img"><img data-src="img/menu/5.png" src="img/load.svg" alt="" class="img lazy"></div>
-                        <div class="swiper-slide menu-img"><img data-src="img/menu/1.png" src="img/load.svg" alt="" class="img lazy"></div>
-                        <div class="swiper-slide menu-img"><img data-src="img/menu/2.png" src="img/load.svg" alt="" class="img lazy"></div>
-                        <div class="swiper-slide menu-img"><img data-src="img/menu/6.png" src="img/load.svg" alt="" class="img lazy"></div>
+                        <div class="swiper-slide menu-img"><img data-src="/img/new/menu/7.png" src="/img/new/load.svg" alt="" class="img lazy"></div>
+                        <div class="swiper-slide menu-img"><img data-src="/img/new/menu/3.png" src="/img/new/load.svg" alt="" class="img lazy"></div>
+                        <div class="swiper-slide menu-img"><img data-src="/img/new/menu/4.png" src="/img/new/load.svg" alt="" class="img lazy"></div>
+                        <div class="swiper-slide menu-img"><img data-src="/img/new/menu/5.png" src="/img/new/load.svg" alt="" class="img lazy"></div>
+                        <div class="swiper-slide menu-img"><img data-src="/img/new/menu/1.png" src="/img/new/load.svg" alt="" class="img lazy"></div>
+                        <div class="swiper-slide menu-img"><img data-src="/img/new/menu/2.png" src="/img/new/load.svg" alt="" class="img lazy"></div>
+                        <div class="swiper-slide menu-img"><img data-src="/img/new/menu/6.png" src="/img/new/load.svg" alt="" class="img lazy"></div>
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
@@ -82,7 +586,7 @@
         </div>
 
         <div class="sidebar">
-            <a href="index.html" class="sidebar-logo"><img src="img/logo-small.svg" alt="" class="img"></a>
+            <a href="index.html" class="sidebar-logo"><img src="/img/new/logo-small.svg" alt="" class="img"></a>
             <div class="sidebar-hamburger">
                 <div class="sidebar-hamburger__icon">
                     <span></span>
@@ -121,16 +625,16 @@
                 <div class="container">
                     <div class="header-list">
                         <a href="index.html" class="header-logo">
-                            <img src="img/logo.svg" alt="Neo-Invest logotype" class="img">
+                            <img src="/img/new/logo.svg" alt="Neo-Invest logotype" class="img">
                         </a>
                         <div class="header-language">
                             <div class="header-language__btn header-language__visible">
-                                <img src="img/rus.svg" class="img header-language__flag" alt="icon: Russian flag">
+                                <img src="/img/new/rus.svg" class="img header-language__flag" alt="icon: Russian flag">
                                 <div class="header-language__text">RU</div>
-                                <img src="img/arrow.svg" alt="icon: arrow" class="img header-language__arrow">
+                                <img src="/img/new/arrow.svg" alt="icon: arrow" class="img header-language__arrow">
                             </div>
                             <a href="/?lang=en" class="header-language__btn header-language__absolute">
-                                <img src="img/eng.svg" class="img header-language__flag" alt="icon: Russian flag">
+                                <img src="/img/new/eng.svg" class="img header-language__flag" alt="icon: Russian flag">
                                 <div class="header-language__text">EN</div>
                             </a>
                         </div>
@@ -154,26 +658,26 @@
             <main class="main">
                 <div class="container">
                         <div class="main-wrapper">
-                        <h1 class="main-title"><span data-aos="fade-up" data-aos-delay="400">Зарабатывайте до 1,7 % <br>в сутки с нами на трендах криптовалюты</span> <img src="img/check.svg" alt="Neo-Invest" data-aos="fade-up" data-aos-delay="1300"></h1>
+                        <h1 class="main-title"><span data-aos="fade-up" data-aos-delay="400">Зарабатывайте до 1,7 % <br>в сутки с нами на трендах криптовалюты</span> <img src="/img/new/check.svg" alt="Neo-Invest" data-aos="fade-up" data-aos-delay="1300"></h1>
                         <div class="main-subtitle" data-aos="fade-up" data-aos-delay="800">Инвестиционная платформа с собственной системой обучения заработку на трендах  криптовалюты </div>
                         <div class="main-buttons">
                             <a href="#b1" class="main-btn btn btn-white scroll" data-aos="fade-in" data-aos-delay="1200">Подробнее</a>
                             <a href="https://drive.google.com/file/d/1RLqIsrKfSDySPRyku0Gc1lDYTScjIpOn/view?usp=sharing" target="_blank" class="main-borderBtn btn" data-aos="fade-in" data-aos-delay="1600">
                                 <span>Скачать презентацию</span>
-                                <b><img src="img/download.svg" alt="icon: Download" class="img"></b>
+                                <b><img src="/img/new/download.svg" alt="icon: Download" class="img"></b>
                             </a>
                         </div>
                         <div class="main-bottom">
                             <div class="main-bottom__text" data-aos="fade-up" data-aos-delay="400">Работаем с проверенными криптовалютными биржами</div>
                             <div class="main-bottom__flex">
-                                <div class="main-bottom__item"><img data-aos="fade-in" data-aos-delay="600" src="img/main-logo-1.svg" alt="Binance" class="img"></div>
-                                <div class="main-bottom__item"><img data-aos="fade-in" data-aos-delay="800" src="img/main-logo-2.svg" alt="Huobi" class="img"></div>
-                                <div class="main-bottom__item"><img data-aos="fade-in" data-aos-delay="1200" src="img/main-logo-3.svg" alt="coinbase" class="img"></div>
-                                <div class="main-bottom__item"><img data-aos="fade-in" data-aos-delay="1400" src="img/main-logo-4.svg" alt="exmo-seeklogo" class="img"></div>
-                                <div class="main-bottom__item"><img data-aos="fade-in" data-aos-delay="1600" src="img/main-logo-5.svg" alt="poloniex" class="img"></div>
+                                <div class="main-bottom__item"><img data-aos="fade-in" data-aos-delay="600" src="/img/new/main-logo-1.svg" alt="Binance" class="img"></div>
+                                <div class="main-bottom__item"><img data-aos="fade-in" data-aos-delay="800" src="/img/new/main-logo-2.svg" alt="Huobi" class="img"></div>
+                                <div class="main-bottom__item"><img data-aos="fade-in" data-aos-delay="1200" src="/img/new/main-logo-3.svg" alt="coinbase" class="img"></div>
+                                <div class="main-bottom__item"><img data-aos="fade-in" data-aos-delay="1400" src="/img/new/main-logo-4.svg" alt="exmo-seeklogo" class="img"></div>
+                                <div class="main-bottom__item"><img data-aos="fade-in" data-aos-delay="1600" src="/img/new/main-logo-5.svg" alt="poloniex" class="img"></div>
                             </div>
                         </div>
-                        <img data-aos="fade-in" data-aos-delay="400" data-src="img/main-phone.png" alt="iPhone" class="main-img lazy" src="data:image/gif;base64,R0lGODlhZQLyBIAAAP///wAAACH5BAEAAAEALAAAAABlAvIEAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHov+bLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvPLOS2+99t6Lb7767stvv/7+C3DAAg9McMEGH4xwwgovzHDDDj8MccQST0xxxRZfjHHGGm/McccefwxyyCKPTHLJJp+Mcsoqr8xyyy6/DHPMMs9Mc80234xzzjrvzHPPPv8MdNBCD0100UYfjXTSSi/NdNNOPw111FJPTXXVVl+NddZab811115/DXbYYo9Ndtlmn4122mqvzXbbbr8Nd9xyz0133XbfjXfeeu/Nd99+/w144IIPTnjhhh+OeOKKL854444/Dnnkkk/+Tnnlll+Oeeaab855555/Dnrooo9Oeummn4566qqvznrrrr8Oe+yyz0577bbfjnvuuu/Oe+++/w588MIPT3zxxh+PfPLKL898884/D3300k9PffXWX4999tpvz3333n8Pfvjij09++eafj3766q/Pfvvuvw9//PLPT3/99t+Pf/76789///7/D8AACnCABCygAQ+IwAQqcIEMbKADHwjBCEpwghSsoAUviMEManCDHOygBz8IwhCKcIQkLKEJT4jCFKpwhSxsoQtfCMMYynCGNKyhDW+IwxzqcIc87KEPfwjEIApxiEQsohGPiMQkKnGJTGyiE58IxShKcYpUrKLDFa+IxSxqcYtc7KIXvwjGMIpxjGQsoxnPiMY0qnGNbGyjG98IxzjKcY50rKMd74jHPOpxj3zsox//CMhACnKQhCykIQ+JyEQqcpGMbKQjHwnJSEpykpSspCUviclManKTnOykJz8JylCKcpSkLKUpT4nKVKpylaxspStfCctYynKWtKylLW+Jy1zqcpe87KUvfwnMYApzmMQspjGPicxkKnOZzGymM58JzWhKc5rUrKY1r4nNbGpzm9zspje/Cc5wrqYAADs=">
+                        <img data-aos="fade-in" data-aos-delay="400" data-src="/img/new/main-phone.png" alt="iPhone" class="main-img lazy" src="data:image/gif;base64,R0lGODlhZQLyBIAAAP///wAAACH5BAEAAAEALAAAAABlAvIEAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHov+bLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvPLOS2+99t6Lb7767stvv/7+C3DAAg9McMEGH4xwwgovzHDDDj8MccQST0xxxRZfjHHGGm/McccefwxyyCKPTHLJJp+Mcsoqr8xyyy6/DHPMMs9Mc80234xzzjrvzHPPPv8MdNBCD0100UYfjXTSSi/NdNNOPw111FJPTXXVVl+NddZab811115/DXbYYo9Ndtlmn4122mqvzXbbbr8Nd9xyz0133XbfjXfeeu/Nd99+/w144IIPTnjhhh+OeOKKL854444/Dnnkkk/+Tnnlll+Oeeaab855555/Dnrooo9Oeummn4566qqvznrrrr8Oe+yyz0577bbfjnvuuu/Oe+++/w588MIPT3zxxh+PfPLKL898884/D3300k9PffXWX4999tpvz3333n8Pfvjij09++eafj3766q/Pfvvuvw9//PLPT3/99t+Pf/76789///7/D8AACnCABCygAQ+IwAQqcIEMbKADHwjBCEpwghSsoAUviMEManCDHOygBz8IwhCKcIQkLKEJT4jCFKpwhSxsoQtfCMMYynCGNKyhDW+IwxzqcIc87KEPfwjEIApxiEQsohGPiMQkKnGJTGyiE58IxShKcYpUrKLDFa+IxSxqcYtc7KIXvwjGMIpxjGQsoxnPiMY0qnGNbGyjG98IxzjKcY50rKMd74jHPOpxj3zsox//CMhACnKQhCykIQ+JyEQqcpGMbKQjHwnJSEpykpSspCUviclManKTnOykJz8JylCKcpSkLKUpT4nKVKpylaxspStfCctYynKWtKylLW+Jy1zqcpe87KUvfwnMYApzmMQspjGPicxkKnOZzGymM58JzWhKc5rUrKY1r4nNbGpzm9zspje/Cc5wrqYAADs=">
                     </div>
                 </div>
             </main>
@@ -186,7 +690,7 @@
                 <div class="about-text" data-aos="fade-in" data-aos-delay="800"><span>Neo-Invest</span> – это инвестиционная платформа с собственной системой обучения клиентов, целью которой является приумножение денежных средств за короткий период.</div>
                 <div class="about-wrapper">
                     <div class="about-bitcoin-wrapper" data-aos="fade-up" data-aos-delay="1200">
-                        <img data-src="img/bitcoin.png" alt="" class="about-bitcoin lazy" src="data:image/gif;base64,R0lGODlh8wP8AYAAAP///wAAACH5BAEAAAEALAAAAADzA/wBAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHov+bLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvPLOS2+99t6Lb7767stvv/7+C3DAAg9McMEGH4xwwgovzHDDDj8MccQST0xxxRZfjHHGGm/McccefwxyyCKPTHLJJp+Mcsoqr8xyyy6/DHPMMs9Mc80234xzzjrvzHPPPv8MdNBCD0100UYfjXTSSi/NdNNOPw111FJPTXXVVl+NddZab811115/DXbYYo9Ndtlmn4122mqvzXbbbr8Nd9xyz0133XbfjXfeeu/Nd99+/w144IIPTnjhhh+OeOKKL854444/Dnnkkk+CTnnlll+Oeeaab855555/Dnrooo9Oeummn4566qqvznrrrr8Oe+yyz0577bbfjnvuuu/Oe+++/w588MIPT3zxxh+PfPLKL898884/D3300k9PffXWX4999tpvz3333n8Pfvjij09++eafj3766q/Pfvvuvw9//PLPT3/99t+Pv/0FAAA7">
+                        <img data-src="/img/new/bitcoin.png" alt="" class="about-bitcoin lazy" src="data:image/gif;base64,R0lGODlh8wP8AYAAAP///wAAACH5BAEAAAEALAAAAADzA/wBAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHov+bLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvPLOS2+99t6Lb7767stvv/7+C3DAAg9McMEGH4xwwgovzHDDDj8MccQST0xxxRZfjHHGGm/McccefwxyyCKPTHLJJp+Mcsoqr8xyyy6/DHPMMs9Mc80234xzzjrvzHPPPv8MdNBCD0100UYfjXTSSi/NdNNOPw111FJPTXXVVl+NddZab811115/DXbYYo9Ndtlmn4122mqvzXbbbr8Nd9xyz0133XbfjXfeeu/Nd99+/w144IIPTnjhhh+OeOKKL854444/Dnnkkk+CTnnlll+Oeeaab855555/Dnrooo9Oeummn4566qqvznrrrr8Oe+yyz0577bbfjnvuuu/Oe+++/w588MIPT3zxxh+PfPLKL898884/D3300k9PffXWX4999tpvz3333n8Pfvjij09++eafj3766q/Pfvvuvw9//PLPT3/99t+Pv/0FAAA7">
                     </div>
                     <div class="about-list">
                         <div class="about-item">
@@ -211,7 +715,7 @@
                     </div>
                     <a href="/register" target="_blank" data-aos="fade-in" data-aos-delay="1000" class="about-bottom__btn btn">Начать инвестировать</a>
                     <div class="about-bottom__rocket"  data-aos="fade-up" data-aos-delay="400">
-                        <img data-src="img/rocket.png" alt="Rocket"class="img lazy" src="data:image/gif;base64,R0lGODlhwwPrBIAAAP///wAAACH5BAEAAAEALAAAAADDA+sEAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHov+bLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvPLOS2+99t6Lb7767stvv/7+C3DAAg9McMEGH4xwwgovzHDDDj8MccQST0xxxRZfjHHGGm/McccefwxyyCKPTHLJJp+Mcsoqr8xyyy6/DHPMMs9Mc80234xzzjrvzHPPPv8MdNBCD0100UYfjXTSSi/NdNNOPw111FJPTXXVVl+NddZab811115/DXbYYo9Ndtlmn4122mqvzXbbbr8Nd9xyz0133XbfjXfeeu/Nd99+/w144IIPTnjhhh+OeOKKL854444/Dnnkkk/+Tnnlll+Oeeaab855555/Dnrooo9Oeummn4566qqvznrrrr8Oe+yyz0577bbfjnvuuu/Oe+++/w588MIPT3zxxh+PfPLKL898884/D3300k9PffXWX4999tpvz3333n8Pfvjij09++eafj3766q/Pfvvuvw9//PLPT3/99t+Pf/76789///7/D8AACnCABCygAQ+IwAQqcIEMbKADHwjBCEpwghSsoAUviMEManCDHOygBz8IwhCKcIQkLKEJT4jCFKpwhSxsoQtfCMMYynCGNKyhDW+IwxzqcIc87KEPfwjEIApxiEQsohGPiMQkKnGJTGyiE58IxShKcYpUrKL+Fa+IxSxqcYtc7KIXvwjGMIpxjGQsoxnPiMY0qnGNbGyjG98IxzjKcY50rKMd74jHPOpxj3zsox//CMhACnKQhCykIQ+JyEQqcpGMbKQjHwnJSEpykpSspCUviclManKTnOykJz8JylCKcpSkLKUpT4nKVKpylaxspStfCctYynKWtKylLW+Jy1zqcpe87KUvfwnMYApzmMQspjGPicxkKnOZzGymM58JzWhKc5rUrKY1r4nNbGpzm9zspje/Cc5winOc5CynOc+JznSqc53sbKc73wnPeMpznvSspz3vic986nOf/OynP/8J0IAKdKAELahBD4rQhCp0oQxtqEP+HwrRiEp0ohStqEUvitGManSjHO2oRz8K0pCKdKQkLalJT4rSlKp0pSxtqUtfCtOYynSmNK2pTW+K05zqdKc87alPfwrUoAp1qEQtqlGPitSkKnWpTG2qU58K1ahKdapUrapVr4rVrGp1q1ztqle/CtawinWsZC2rWc+K1rSqda1sbatb3wrXuMp1rnStq13vite86nWvfO2rX/8K2MAKdrCELaxhD4vYxCp2sYxtrGMfC9nISnaylK2sZS+L2cxqdrOc7axnPwva0Ip2tKQtrWlPi9rUqna1rG2ta18L29jKdra0ra1tb4vb3Op2t7ztrW9/C9zgCne4xC2ucY9zi9zkKne5zG2uc58L3ehKd7rUra51r4vd7Gp3u9ztrne/C97wine85C2vec+L3vSqd73sba973wvf+Mp3vvStr33vi9/86ne//O2vf/8L4AALeMAELrCBD4zgBCt4wQxusIMfDOEIS3jCFK6whS+M4RkWAAA7">
+                        <img data-src="/img/new/rocket.png" alt="Rocket"class="img lazy" src="data:image/gif;base64,R0lGODlhwwPrBIAAAP///wAAACH5BAEAAAEALAAAAADDA+sEAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHov+bLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvPLOS2+99t6Lb7767stvv/7+C3DAAg9McMEGH4xwwgovzHDDDj8MccQST0xxxRZfjHHGGm/McccefwxyyCKPTHLJJp+Mcsoqr8xyyy6/DHPMMs9Mc80234xzzjrvzHPPPv8MdNBCD0100UYfjXTSSi/NdNNOPw111FJPTXXVVl+NddZab811115/DXbYYo9Ndtlmn4122mqvzXbbbr8Nd9xyz0133XbfjXfeeu/Nd99+/w144IIPTnjhhh+OeOKKL854444/Dnnkkk/+Tnnlll+Oeeaab855555/Dnrooo9Oeummn4566qqvznrrrr8Oe+yyz0577bbfjnvuuu/Oe+++/w588MIPT3zxxh+PfPLKL898884/D3300k9PffXWX4999tpvz3333n8Pfvjij09++eafj3766q/Pfvvuvw9//PLPT3/99t+Pf/76789///7/D8AACnCABCygAQ+IwAQqcIEMbKADHwjBCEpwghSsoAUviMEManCDHOygBz8IwhCKcIQkLKEJT4jCFKpwhSxsoQtfCMMYynCGNKyhDW+IwxzqcIc87KEPfwjEIApxiEQsohGPiMQkKnGJTGyiE58IxShKcYpUrKL+Fa+IxSxqcYtc7KIXvwjGMIpxjGQsoxnPiMY0qnGNbGyjG98IxzjKcY50rKMd74jHPOpxj3zsox//CMhACnKQhCykIQ+JyEQqcpGMbKQjHwnJSEpykpSspCUviclManKTnOykJz8JylCKcpSkLKUpT4nKVKpylaxspStfCctYynKWtKylLW+Jy1zqcpe87KUvfwnMYApzmMQspjGPicxkKnOZzGymM58JzWhKc5rUrKY1r4nNbGpzm9zspje/Cc5winOc5CynOc+JznSqc53sbKc73wnPeMpznvSspz3vic986nOf/OynP/8J0IAKdKAELahBD4rQhCp0oQxtqEP+HwrRiEp0ohStqEUvitGManSjHO2oRz8K0pCKdKQkLalJT4rSlKp0pSxtqUtfCtOYynSmNK2pTW+K05zqdKc87alPfwrUoAp1qEQtqlGPitSkKnWpTG2qU58K1ahKdapUrapVr4rVrGp1q1ztqle/CtawinWsZC2rWc+K1rSqda1sbatb3wrXuMp1rnStq13vite86nWvfO2rX/8K2MAKdrCELaxhD4vYxCp2sYxtrGMfC9nISnaylK2sZS+L2cxqdrOc7axnPwva0Ip2tKQtrWlPi9rUqna1rG2ta18L29jKdra0ra1tb4vb3Op2t7ztrW9/C9zgCne4xC2ucY9zi9zkKne5zG2uc58L3ehKd7rUra51r4vd7Gp3u9ztrne/C97wine85C2vec+L3vSqd73sba973wvf+Mp3vvStr33vi9/86ne//O2vf/8L4AALeMAELrCBD4zgBCt4wQxusIMfDOEIS3jCFK6whS+M4RkWAAA7">
                         <span>Neo-Invest</span>
                     </div>
                 </div>
@@ -222,9 +726,9 @@
             <div class="blue-top">
                 <div class="blue-top__wrapper"></div>
             </div>
-            <img data-src="img/blur.png" src="img/load.svg" alt="" class="tools-blur lazy">
-            <img data-src="img/blur.png" src="img/load.svg" alt="" class="tools-blur left lazy">
-            <img src="img/bg-tools.svg" alt="background" class="tools-bg">
+            <img data-src="/img/new/blur.png" src="/img/new/load.svg" alt="" class="tools-blur lazy">
+            <img data-src="/img/new/blur.png" src="/img/new/load.svg" alt="" class="tools-blur left lazy">
+            <img src="/img/new/bg-tools.svg" alt="background" class="tools-bg">
             <div class="container">
                 <h2 class="title white center" data-aos="fade-up" data-aos-delay="400" >Наш инвестиционный <br>инструментарий</h2>
                 <div class="tools-wrapper">
@@ -267,7 +771,7 @@
                         </div>
                     </div>
                     <div class="cube-wrapper" data-aos="fade-up" data-aos-delay="400">
-                        <img data-src="img/cube.png" alt="cube" class="tools-cube lazy" src="data:image/gif;base64,R0lGODlhDQPaAoAAAP///wAAACH5BAEAAAEALAAAAAANA9oCAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHov+bLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvPLOS2+99t6Lb7767stvv/7+C3DAAg9McMEGH4xwwgovzHDDDj8MccQST0xxxRZfjHHGGm/McccefwxyyCKPTHLJJp+Mcsoqr8xyyy6/DHPMMs9Mc80234xzzjrvzHPPPv8MdNBCD0100UYfjXTSSi/NdNNOPw111FJPTXXVVl+NddZab811115/DXbYYo9Ndtlmn4122mqvzXbbbr8Nd9xyz0133XbfjXfeeu/Nd99+/w144IIPTnjhhh+OeOKKL854444/Dnnkkk/NTnnlll+Oeeaab855555/Dnrooo9Oeummn4566qqvznrrrr8Oe+yyz0577bbfjnvuuu/Oe+++/w588MIPT3zxxh+PfPLKL898884/D3300k9PffXWX4999tpvz3333n8Pfvjij09++eafj3766q/Pfvvuvw9//PLPT3/99t+Pf/76789///7/D8AACnCABCygAQ+IwAQqcIEMbKADHwjBCEpwghSsoAUviMEManCDHOygBz8IwhCKcIQkLKEJT4jCFKpwhSxsoQtfSJYCAAA7">
+                        <img data-src="/img/new/cube.png" alt="cube" class="tools-cube lazy" src="data:image/gif;base64,R0lGODlhDQPaAoAAAP///wAAACH5BAEAAAEALAAAAAANA9oCAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHov+bLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvPLOS2+99t6Lb7767stvv/7+C3DAAg9McMEGH4xwwgovzHDDDj8MccQST0xxxRZfjHHGGm/McccefwxyyCKPTHLJJp+Mcsoqr8xyyy6/DHPMMs9Mc80234xzzjrvzHPPPv8MdNBCD0100UYfjXTSSi/NdNNOPw111FJPTXXVVl+NddZab811115/DXbYYo9Ndtlmn4122mqvzXbbbr8Nd9xyz0133XbfjXfeeu/Nd99+/w144IIPTnjhhh+OeOKKL854444/Dnnkkk/NTnnlll+Oeeaab855555/Dnrooo9Oeummn4566qqvznrrrr8Oe+yyz0577bbfjnvuuu/Oe+++/w588MIPT3zxxh+PfPLKL898884/D3300k9PffXWX4999tpvz3333n8Pfvjij09++eafj3766q/Pfvvuvw9//PLPT3/99t+Pf/76789///7/D8AACnCABCygAQ+IwAQqcIEMbKADHwjBCEpwghSsoAUviMEManCDHOygBz8IwhCKcIQkLKEJT4jCFKpwhSxsoQtfSJYCAAA7">
                     </div>
                 </div>
                 <div class="tools-bottom">
@@ -285,7 +789,7 @@
                     <div class="packets-list">
                         <div class="packets-block" data-aos="fade-in" data-aos-delay="400">
                             <div class="packets-item">
-                                <div class="packets-item__img"><img data-src="img/pacekts-1.png" alt="" class="img lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="></div>
+                                <div class="packets-item__img"><img data-src="/img/new/pacekts-1.png" alt="" class="img lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="></div>
                                 <div class="packets-item__name">Neo Infinity</div>
                                 <div class="packets-item__list">
                                     <div class="packets-item__block">
@@ -308,7 +812,7 @@
                                         <span>Возврат вложеных средств:</span>
                                         <p>Нет</p>
                                         <div class="packets-item__question small">
-                                            <img src="img/question.svg" alt="question" class="img">
+                                            <img src="/img/new/question.svg" alt="question" class="img">
                                             <p>Вложенные средства автоматически возвращаются с каждым ежедневным начислением прибыли</p>
                                         </div>
                                     </div>
@@ -318,7 +822,7 @@
                         </div>
                         <div class="packets-block" data-aos="fade-in" data-aos-delay="600">
                             <div class="packets-item">
-                                <div class="packets-item__img"><img data-src="img/pacekts-2.png" alt="" class="img lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="></div>
+                                <div class="packets-item__img"><img data-src="/img/new/pacekts-2.png" alt="" class="img lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="></div>
                                 <div class="packets-item__name">Neo Back</div>
                                 <div class="packets-item__list">
                                     <div class="packets-item__block">
@@ -341,7 +845,7 @@
                                         <span>Возврат вложеных средств:</span>
                                         <p>Да</p>
                                         <div class="packets-item__question">
-                                            <img src="img/question.svg" alt="question" class="img">
+                                            <img src="/img/new/question.svg" alt="question" class="img">
                                             <p>Прибыль по пакету перестанет начисляться, как только пакет будет закрыт. <br>Вся сумма будет зачислена на ваш баланс через 30 рабочих дней и будет доступна для вывода.</p>
                                         </div>
                                     </div>
@@ -351,7 +855,7 @@
                         </div>
                         <div class="packets-block" data-aos="fade-in" data-aos-delay="800">
                             <div class="packets-item">
-                                <div class="packets-item__img"><img data-src="img/pacekts-3.png" alt="" class="img lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="></div>
+                                <div class="packets-item__img"><img data-src="/img/new/pacekts-3.png" alt="" class="img lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="></div>
                                 <div class="packets-item__name">Neo Premium</div>
                                 <div class="packets-item__list">
                                     <div class="packets-item__block">
@@ -374,7 +878,7 @@
                                         <span>Возврат вложеных средств:</span>
                                         <p>Нет</p>
                                         <div class="packets-item__question small">
-                                            <img src="img/question.svg" alt="question" class="img">
+                                            <img src="/img/new/question.svg" alt="question" class="img">
                                             <p>Вложенные средства автоматически возвращаются с каждым ежедневным начислением прибыли</p>
                                         </div>
                                     </div>
@@ -387,7 +891,7 @@
                         <div class="swiper-wrapper">
                             <div class="packets-block swiper-slide">
                                 <div class="packets-item">
-                                    <div class="packets-item__img"><img data-src="img/pacekts-1.png" alt="" class="img lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="></div>
+                                    <div class="packets-item__img"><img data-src="/img/new/pacekts-1.png" alt="" class="img lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="></div>
                                     <div class="packets-item__name">Neo Infinity</div>
                                     <div class="packets-item__list">
                                         <div class="packets-item__block">
@@ -410,7 +914,7 @@
                                             <span>Возврат вложеных средств:</span>
                                             <p>Нет</p>
                                             <div class="packets-item__question small">
-                                                <img src="img/question.svg" alt="question" class="img">
+                                                <img src="/img/new/question.svg" alt="question" class="img">
                                                 <p>Вложенные средства автоматически возвращаются с каждым ежедневным начислением прибыли</p>
                                             </div>
                                         </div>
@@ -420,7 +924,7 @@
                             </div>
                             <div class="packets-block swiper-slide">
                                 <div class="packets-item">
-                                    <div class="packets-item__img"><img data-src="img/pacekts-2.png" alt="" class="img lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="></div>
+                                    <div class="packets-item__img"><img data-src="/img/new/pacekts-2.png" alt="" class="img lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="></div>
                                     <div class="packets-item__name">Neo Back</div>
                                     <div class="packets-item__list">
                                         <div class="packets-item__block">
@@ -443,7 +947,7 @@
                                             <span>Возврат вложеных средств:</span>
                                             <p>Да</p>
                                             <div class="packets-item__question">
-                                                <img src="img/question.svg" alt="question" class="img">
+                                                <img src="/img/new/question.svg" alt="question" class="img">
                                                 <p>Прибыль по пакету перестанет начисляться, как только пакет будет закрыт. <br>Вся сумма будет зачислена на ваш баланс через 30 рабочих дней и будет доступна для вывода.</p>
                                             </div>
                                         </div>
@@ -453,7 +957,7 @@
                             </div>
                             <div class="packets-block swiper-slide">
                                 <div class="packets-item">
-                                    <div class="packets-item__img"><img data-src="img/pacekts-3.png" alt="" class="img lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="></div>
+                                    <div class="packets-item__img"><img data-src="/img/new/pacekts-3.png" alt="" class="img lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="></div>
                                     <div class="packets-item__name">Neo Premium</div>
                                     <div class="packets-item__list">
                                         <div class="packets-item__block">
@@ -476,7 +980,7 @@
                                             <span>Возврат вложеных средств:</span>
                                             <p>Нет</p>
                                             <div class="packets-item__question small">
-                                                <img src="img/question.svg" alt="question" class="img">
+                                                <img src="/img/new/question.svg" alt="question" class="img">
                                                 <p>Вложенные средства автоматически возвращаются с каждым ежедневным начислением прибыли</p>
                                             </div>
                                         </div>
@@ -563,10 +1067,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="calculator-parcent lazy" data-bg="img/parcent-bg.jpg">
+                                <div class="calculator-parcent lazy" data-bg="/img/new/parcent-bg.jpg">
                                     <div class="calculator-parcent__title">Ежедневный процент :</div>
                                     <div class="calculator-parcent__result"><span>1.1</span> %</div>
-                                    <img src="img/parcent-money.png" alt="Money" class="calculator-parcent__img">
+                                    <img src="/img/new/parcent-money.png" alt="Money" class="calculator-parcent__img">
                                 </div>
                             </div>
                         </div>
@@ -581,13 +1085,13 @@
             <div class="blue-top">
                 <div class="blue-top__wrapper"></div>
             </div>
-            <img data-src="img/blur.png" src="img/load.svg" alt="" class="programs-blur lazy">
-            <img data-src="img/blur.png" src="img/load.svg" alt="" class="programs-blur left lazy">
+            <img data-src="/img/new/blur.png" src="/img/new/load.svg" alt="" class="programs-blur lazy">
+            <img data-src="/img/new/blur.png" src="/img/new/load.svg" alt="" class="programs-blur left lazy">
             <div class="container">
                 <h2 class="title center white" data-aos="fade-up" data-aos-delay="300">Чтобы сократить маркетинговые расходы, мы предусмотрели партнерскую программу</h2>
                 <div class="programs-wrapper">
                     <div class="programs-imagesWrapper" data-aos="fade-up" data-aos-delay="600">
-                        <img data-src="img/programs.png" alt="" class="programs-img lazy" src="data:image/gif;base64,R0lGODlh1QGbAYAAAP///wAAACH5BAEAAAEALAAAAADVAZsBAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fyU+/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZz8FAAA7">
+                        <img data-src="/img/new/programs.png" alt="" class="programs-img lazy" src="data:image/gif;base64,R0lGODlh1QGbAYAAAP///wAAACH5BAEAAAEALAAAAADVAZsBAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fyU+/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZz8FAAA7">
                     </div>
                     <div class="programs-list">
                         <div class="programs-item" data-aos="fade-up" data-aos-delay="400">
@@ -1119,10 +1623,10 @@
                         <div class="platform-text" data-aos="fade-in" data-aos-delay="600">Платформа Neo-Invest является не только инновационной системой для получения сверхприбыли за короткое время, но является и образовательной платформой. Уже сейчас мы запустили канал <br>с бесплатными сигналами в Telegram.</div>
                         <a href="https://t.me/neo_invest_signal" data-aos="fade-in" data-aos-delay="900" target="_blank" class="platform-btn btn">
                             <span>Получить сигнал</span>
-                            <b><img src="img/telegram.svg" class="img" alt="icon: telegram"></b>
+                            <b><img src="/img/new/telegram.svg" class="img" alt="icon: telegram"></b>
                         </a>
                         <div class="platform-bottom"> 
-                            <img data-src="img/iphone.png" alt="iPhone" data-aos="fade-in" data-aos-delay="1400" class="platform-bottom__img lazy" src="data:image/gif;base64,R0lGODlhRwW/BYAAAP///wAAACH5BAEAAAEALAAAAABHBb8FAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHov+bLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvPLOS2+99t6Lb7767stvv/7+C3DAAg9McMEGH4xwwgovzHDDDj8MccQST0xxxRZfjHHGGm/McccefwxyyCKPTHLJJp+Mcsoqr8xyyy6/DHPMMs9Mc80234xzzjrvzHPPPv8MdNBCD0100UYfjXTSSi/NdNNOPw111FJPTXXVVl+NddZab811115/DXbYYo9Ndtlmn4122mqvzXbbbr8Nd9xyz0133XbfjXfeeu/Nd99+/w144IIPTnjhhh+OeOKKL854444/Dnnkkk/+Tnnlll+Oeeaab855555/Dnrooo9Oeummn4566qqvznrrrr8Oe+yyz0577bbfjnvuuu/Oe+++/w588MIPT3zxxh+PfPLKL898884/D3300k9PffXWX4999tpvz3333n8Pfvjij09++eafj3766q/Pfvvuvw9//PLPT3/99t+Pf/76789///7/D8AACnCABCygAQ+IwAQqcIEMbKADHwjBCEpwghSsoAUviMEManCDHOygBz8IwhCKcIQkLKEJT4jCFKpwhSxsoQtfCMMYynCGNKyhDW+IwxzqcIc87KEPfwjEIApxiEQsohGPiMQkKnGJTGyiE58IxShKcYpUrKL+Fa+IxSxqcYtc7KIXvwjGMIpxjGQsoxnPiMY0qnGNbGyjG98IxzjKcY50rKMd74jHPOpxj3zsox//CMhACnKQhCykIQ+JyEQqcpGMbKQjHwnJSEpykpSspCUviclManKTnOykJz8JylCKcpSkLKUpT4nKVKpylaxspStfCctYynKWtKylLW+Jy1zqcpe87KUvfwnMYApzmMQspjGPicxkKnOZzGymM58JzWhKc5rUrKY1r4nNbGpzm9zspje/Cc5winOc5CynOc+JznSqc53sbKc73wnPeMpznvSspz3vic986nOf/OynP/8J0IAKdKAELahBD4rQhCp0oQxtqEP+HwrRiEp0ohStqEUvitGManSjHO2oRz8K0pCKdKQkLalJT4rSlKp0pSxtqUtfCtOYynSmNK2pTW+K05zqdKc87alPfwrUoAp1qEQtqlGPitSkKnWpTG2qU58K1ahKdapUrapVr4rVrGp1q1ztqle/CtawinWsZC2rWc+K1rSqda1sbatb3wrXuMp1rnStq13vite86nWvfO2rX/8K2MAKdrCELaxhD4vYxCp2sYxtrGMfC9nISnaylK2sZS+L2cxqdrOc7axnPwva0Ip2tKQtrWlPi9rUqna1rG2ta18L29jKdra0ra1tb4vb3Op2t7ztrW9/C9zgCne4xC2ucY/+i9zkKne5zG2uc58L3ehKd7rUra51r4vd7Gp3u9ztrne/C97wine85C2vec+L3vSqd73sba973wvf+Mp3vvStr33vi9/86ne//O2vf/8L4AALeMAELrCBD4zgBCt4wQxusIMfDOEIS3jCFK6whS+M4QxreMMc7rCHPwziEIt4xCQusYlPjOIUq3jFLG6xi18M4xjLeMY0rrGNb4zjHOt4xzzusY9/DOQgC3nIRC6ykY+M5CQreclMbrKTnwzlKEt5ylSuspWvjOUsa3nLXO6yl78M5jCLecxkLrOZz4zmNKt5zWxus5vfDOc4y3nOdK6zne+M5zzrec987rOf/wz+6EALetCELrShD43oRCt60YxutKMfDelIS3rSlK60pS+N6UxretOc7rSnPw3qUIt61KQutalPjepUq3rVrG61q18N61jLeta0rrWtb43rXOt617zuta9/DexgC3vYxC62sY+N7GQre9nMbraznw3taEt72tSutrWvje1sa3vb3O62t78N7nCLe9zkLre5z43udKt73exut7vfDe94y3ve9K63ve+N73zre9/87re//w3wgAt84AQvuMEPjvCEK3zhDG+4wx8O8YhLfOIUr7jFL47xjGt84xzvuMc/DvKQi3zkJC+5yU+O8pSrfOUsb7nLXw7zmMt85jSvuc1vjvPQnOt85zzvuc9/DvSgC33oRC+60Y+O9KQrfelMb7rTnw71qEt96lSvutWvjvWsa33rXO+6178O9rCLfexkL7vZz472tKt97Wxvu9vfDve4y33udK+73e+O97zrfe9877vf/w74wAt+8IQvvOEPj/jEK37xjG+84x8P+chLfvKUr7zlL4/5zGt+85zvvOc/D/rQi370pC+96U+P+tSrfvWsb73rXw/72Mt+9rSvve1vj/vc6373vO+9738P/OALf/jEL77xj4/85Ct/+cxvPkwKAAA7">
+                            <img data-src="/img/new/iphone.png" alt="iPhone" data-aos="fade-in" data-aos-delay="1400" class="platform-bottom__img lazy" src="data:image/gif;base64,R0lGODlhRwW/BYAAAP///wAAACH5BAEAAAEALAAAAABHBb8FAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHov+bLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvPLOS2+99t6Lb7767stvv/7+C3DAAg9McMEGH4xwwgovzHDDDj8MccQST0xxxRZfjHHGGm/McccefwxyyCKPTHLJJp+Mcsoqr8xyyy6/DHPMMs9Mc80234xzzjrvzHPPPv8MdNBCD0100UYfjXTSSi/NdNNOPw111FJPTXXVVl+NddZab811115/DXbYYo9Ndtlmn4122mqvzXbbbr8Nd9xyz0133XbfjXfeeu/Nd99+/w144IIPTnjhhh+OeOKKL854444/Dnnkkk/+Tnnlll+Oeeaab855555/Dnrooo9Oeummn4566qqvznrrrr8Oe+yyz0577bbfjnvuuu/Oe+++/w588MIPT3zxxh+PfPLKL898884/D3300k9PffXWX4999tpvz3333n8Pfvjij09++eafj3766q/Pfvvuvw9//PLPT3/99t+Pf/76789///7/D8AACnCABCygAQ+IwAQqcIEMbKADHwjBCEpwghSsoAUviMEManCDHOygBz8IwhCKcIQkLKEJT4jCFKpwhSxsoQtfCMMYynCGNKyhDW+IwxzqcIc87KEPfwjEIApxiEQsohGPiMQkKnGJTGyiE58IxShKcYpUrKL+Fa+IxSxqcYtc7KIXvwjGMIpxjGQsoxnPiMY0qnGNbGyjG98IxzjKcY50rKMd74jHPOpxj3zsox//CMhACnKQhCykIQ+JyEQqcpGMbKQjHwnJSEpykpSspCUviclManKTnOykJz8JylCKcpSkLKUpT4nKVKpylaxspStfCctYynKWtKylLW+Jy1zqcpe87KUvfwnMYApzmMQspjGPicxkKnOZzGymM58JzWhKc5rUrKY1r4nNbGpzm9zspje/Cc5winOc5CynOc+JznSqc53sbKc73wnPeMpznvSspz3vic986nOf/OynP/8J0IAKdKAELahBD4rQhCp0oQxtqEP+HwrRiEp0ohStqEUvitGManSjHO2oRz8K0pCKdKQkLalJT4rSlKp0pSxtqUtfCtOYynSmNK2pTW+K05zqdKc87alPfwrUoAp1qEQtqlGPitSkKnWpTG2qU58K1ahKdapUrapVr4rVrGp1q1ztqle/CtawinWsZC2rWc+K1rSqda1sbatb3wrXuMp1rnStq13vite86nWvfO2rX/8K2MAKdrCELaxhD4vYxCp2sYxtrGMfC9nISnaylK2sZS+L2cxqdrOc7axnPwva0Ip2tKQtrWlPi9rUqna1rG2ta18L29jKdra0ra1tb4vb3Op2t7ztrW9/C9zgCne4xC2ucY/+i9zkKne5zG2uc58L3ehKd7rUra51r4vd7Gp3u9ztrne/C97wine85C2vec+L3vSqd73sba973wvf+Mp3vvStr33vi9/86ne//O2vf/8L4AALeMAELrCBD4zgBCt4wQxusIMfDOEIS3jCFK6whS+M4QxreMMc7rCHPwziEIt4xCQusYlPjOIUq3jFLG6xi18M4xjLeMY0rrGNb4zjHOt4xzzusY9/DOQgC3nIRC6ykY+M5CQreclMbrKTnwzlKEt5ylSuspWvjOUsa3nLXO6yl78M5jCLecxkLrOZz4zmNKt5zWxus5vfDOc4y3nOdK6zne+M5zzrec987rOf/wz+6EALetCELrShD43oRCt60YxutKMfDelIS3rSlK60pS+N6UxretOc7rSnPw3qUIt61KQutalPjepUq3rVrG61q18N61jLeta0rrWtb43rXOt617zuta9/DexgC3vYxC62sY+N7GQre9nMbraznw3taEt72tSutrWvje1sa3vb3O62t78N7nCLe9zkLre5z43udKt73exut7vfDe94y3ve9K63ve+N73zre9/87re//w3wgAt84AQvuMEPjvCEK3zhDG+4wx8O8YhLfOIUr7jFL47xjGt84xzvuMc/DvKQi3zkJC+5yU+O8pSrfOUsb7nLXw7zmMt85jSvuc1vjvPQnOt85zzvuc9/DvSgC33oRC+60Y+O9KQrfelMb7rTnw71qEt96lSvutWvjvWsa33rXO+6178O9rCLfexkL7vZz472tKt97Wxvu9vfDve4y33udK+73e+O97zrfe9877vf/w74wAt+8IQvvOEPj/jEK37xjG+84x8P+chLfvKUr7zlL4/5zGt+85zvvOc/D/rQi370pC+96U+P+tSrfvWsb73rXw/72Mt+9rSvve1vj/vc6373vO+9738P/OALf/jEL77xj4/85Ct/+cxvPkwKAAA7">
                             <div class="platform-bottom__block">
                                 <div class="platform-bottom__promo"><span>Neo<br>invest</span></div>
                                 <div class="platform-bottom__text">В январе 2022 года по дорожной карте у нас планируется масштабное открытие  образовательной платформы внутри уже имеющейся системы. Вы сможете не покидая систему совершенно бесплатно учиться использовать все 5 наших инструментов самостоятельно.</div>
@@ -1131,7 +1635,7 @@
                         <div class="platform-partner" data-aos="fade-in" data-aos-delay="500">
                             <div class="platform-partner__title">Стратегический партнер</div>
                             <div class="platform-partner__flex">
-                                <img src="img/logo-partner.svg" alt="logo Uniswap" class="platform-partner__logo img">
+                                <img src="/img/new/logo-partner.svg" alt="logo Uniswap" class="platform-partner__logo img">
                                 <div class="platform-partner__info">
                                     <a href="https://uniswap.org/" target="_blank" class="platform-partner__link">Uniswap.org</a>
                                     <div class="platform-partner__text" data-aos="fade-in" data-aos-delay="300">Стратегическим партнером компании <br>Neo-Invest является компания Uniswap.</div>
@@ -1211,10 +1715,10 @@
                 <div class="blue-top__wrapper"></div>
             </div>
             <div class="change-bg">
-                <!-- <div class="change-bg__circle"></div> -->
-                <img src="img/change-bg.svg" alt="" class="change-bg__top">
-                <img src="img/change-bg.svg" alt="" class="change-bg__bottom">
-                <img data-src="img/blur.png" src="img/load.svg" alt="" class="change-blur lazy">
+
+                <img src="/img/new/change-bg.svg" alt="" class="change-bg__top">
+                <img src="/img/new/change-bg.svg" alt="" class="change-bg__bottom">
+                <img data-src="/img/new/blur.png" src="/img/new/load.svg" alt="" class="change-blur lazy">
             </div>
             <div class="container">
                 <h2 class="change-title" data-aos="fade-in" data-aos-delay="300">
@@ -1289,7 +1793,6 @@
 
 
     </div>
-    <!-- end page -->
 
 
 
@@ -1314,4 +1817,4 @@
     <script src="libs/aos.js"></script>
     <script src="js/landing.js?v=5"></script>
 </body>
-</html>
+</html> -->

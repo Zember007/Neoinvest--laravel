@@ -64,9 +64,9 @@
                                                target="_blank">
                                                 @lang('general.view')
                                             </a>
-                                        </li>
+                                        </li> 
                                         <li>
-                                            <b>@lang('users.register_ip_address')</b>:
+                                            <b>@lang('users.register_ip_address')</b>: 
                                             {{ $user->register_ip_address ?? '—' }}
                                         </li>
                                         <li>

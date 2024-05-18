@@ -15,13 +15,13 @@
 
     @livewireStyles
 
-    <script src="{{ mix('js/app.js') }}" defer></script>
+    <!-- <script src="{{ mix('js/app.js') }}" defer></script>
     <script src="{{ asset('js/dropdowns.js') }}" defer></script>
     <script src="{{ asset('js/modal.js') }}" defer></script>
     <script src="{{ asset('js/passRecovery.js') }}" defer></script>
     <script src="{{ asset('js/phone.js') }}" defer></script>
     <script src="{{ asset('js/timer.js') }}" defer></script>
-    <script src="{{ asset('js/switchAuth.js') }}" defer></script>
+    <script src="{{ asset('js/switchAuth.js') }}" defer></script> -->
     <script src="{{ asset('js/new/libs.min.js') }}" defer></script>
     <script src="{{ asset('js/new/common.js') }}" defer></script>
 
@@ -30,12 +30,6 @@
 
 <body>
     <div class="root main-bg f-wrapper">
-        <!-- <header class="f-header _mb">
-            <a href="/">
-                <img src="/assets/logo.svg" alt="Neo Invest" class="logo">
-            </a>
-            @include('layouts.partials.header.lang')
-        </header> -->
 
         <header class="header">
             <div class="container">
@@ -57,25 +51,12 @@
                                     <li><a href="review.html">Отзывы</a></li>
                                     <li><a href="news.html">Акции🔥</a></li>
                                 </ul>
-                                <!-- <div class="lang header__lang">
-                                    <a href="#" class="lang__control active">ру</a>
-                                    <a href="#" class="lang__control">eng</a>
-                                </div> -->
+
                                 @include('layouts.partials.header.lang')
                             </nav>
                         </div>
                     </div>
-                    <div class="col-auto">
-                        <div class="header__controls">
-                            <a href="login.html" class="btn btn-small btn-fill-transparent header__controls-link">
-                                <img src="/img/new/icons/icon-user-accent.svg" alt="alt"
-                                    class="d-none d-md-block link__icon">
-                                <div class="link__title">Войти</div>
-                            </a>
-                            <a href="register.html"
-                                class="btn btn-small btn-fill-white header__controls-btn">Регистрация</a>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </header>

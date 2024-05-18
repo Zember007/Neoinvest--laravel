@@ -269,6 +269,17 @@ $(function() {
                 }
             }
         });
+
+		const clickedItem = document.querySelectorAll(".dd-item"), 
+              input = document.querySelector(".dd-input"); 
+        
+        if (clickedItem[0]) {
+			clickedItem.forEach(el => {
+				el.addEventListener('click', () => {
+					input.value = el.dataset.value;
+				})
+			})           
+        }
     });
 });
 
