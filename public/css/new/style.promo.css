@@ -1,0 +1,144 @@
+.timer__wrap {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.timer__items {
+  display: flex;
+  font-size: 48px;
+}
+.timer__item {
+  position: relative;
+  min-width: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 15px;
+  text-align: center;
+      -webkit-text-fill-color: transparent;
+    background: linear-gradient(42.2deg, #5b55c9 3.385%, #c8548a 75.559%);
+    -webkit-background-clip: text;
+}
+.timer__item::before {
+  content: attr(data-title);
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  font-size: 14px;
+      -webkit-text-fill-color: transparent;
+    background: linear-gradient(42.2deg, #5b55c9 3.385%, #c8548a 75.559%);
+    -webkit-background-clip: text;
+}
+.timer__item:not(:last-child)::after {
+  content: ':';
+  position: absolute;
+  right: -15px;
+}
+
+.input__field {
+    resize: none;
+}
+
+.timer__title {
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(42.2deg, #5b55c9 3.385%, #c8548a 75.559%);
+    -webkit-background-clip: text;
+    line-height: normal;
+    max-width: 290px;
+}
+
+.invest__top-btn {
+    background-color: #5b55c9;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 16px;
+    overflow: hidden;
+    position: relative;
+    max-height: 193px;
+    max-width: 193px;
+    z-index: 2;
+}
+.invest__top-btn:hover {
+    color: #fff;
+}
+
+.btn-round:after {
+    z-index: -1;
+}
+
+.products__top-descr ul li{
+    list-style: circle;
+    list-style-position: inside;
+}
+.products__top-descr ul{
+   font-size: 16px;
+   font-weight: 500;
+   margin-bottom: 20px;
+}
+
+.products__top-descr p{
+   font-size: 16px;
+   font-weight: 500;
+   margin-bottom: 10px;
+}
+
+.h2.invest-slide__title {
+    font-size: 36px;
+}
+
+.slider__btns {
+    align-items: end;
+    align-items: center;
+}
+.account__btns {
+    margin-top: 10px;
+}
+.pagination {
+    display: flex;
+    margin-left: 10px;
+}
+.account__btns a{
+    padding:0 8px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.account__btns a:hover{
+    color: #C14E85;    
+}
+
+.account__btns .active {
+    color: #C14E85;
+}
+
+
+@media (max-width: 767px) {
+    .timer__wrap {
+        flex-direction: column;
+        gap:15px;
+    }
+    .timer__title {
+        order: 1;
+        font-size: 38px;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        padding-top: 15px;
+    }
+    .timer__items {
+        order:2;
+    }
+    .invest-slide__image {      
+        top: 189px;  
+    }
+
+    .h2.invest-slide__title {
+        font-size: 18px;
+    }
+    .products__top-title h2 {
+        font-size: 22px;
+    }
+
+}

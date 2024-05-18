@@ -1,22 +1,10 @@
-<form action="{{ route('switch-language') }}" method="POST" class="lang dd select">
+<form action="{{ route('switch-language') }}" method="POST" class="lang header__lang select dd"> 
     @csrf
-
-    <input type="hidden" class="dd-input" value="ru" name="locale">
-    <div class="lang-item selected _dark-gray">
-        <img src="/assets/flag-{{ app()->getLocale() }}.svg" alt="{{ app()->getLocale() }}" class="lang-flag">
-        <div class="lang-label">{{ strtoupper(app()->getLocale()) }}</div>
-    </div>
-    <ul class="lang-list dd-list">
-        @foreach(array_keys(config('countries')) as $code)
+    <input type="hidden" class="dd-input" value="en" name="locale"> 
+    @foreach(array_keys(config('countries')) as $code) 
             @if(!in_array($code, config('interface.locales')))
-                @continue
+                @continue 
             @endif
-            <li>
-                <button type="submit" class="lang-item dd-item _dark-gray" data-value="{{ $code }}">
-                    <img src="/assets/flag-{{ $code }}.svg" alt="{{ $code }}" class="lang-flag">
-                    <div class="lang-label">{{ strtoupper($code) }}</div>
-                </button>
-            </li>
-        @endforeach
-    </ul>
+            <button data-value="{{ $code }}" type="submit" class="dd-item lang__control  @if($code == app()->getLocale()) active  @endif">{{ $code }}</button> 
+    @endforeach
 </form>
