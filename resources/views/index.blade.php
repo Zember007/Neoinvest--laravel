@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>WorldSmart - Главная</title>
+  <title>WorldSmart - @lang('index.title')</title>
   <meta name="description" content="#">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -50,9 +50,9 @@
           <div class="header__controls"> 
             <a href="{{ route('login') }}" class="btn btn-small btn-fill-transparent header__controls-link">
               <img src="/img/new/icons/icon-user-accent.svg" alt="alt" class="d-none d-md-block link__icon">
-              <div class="link__title">Войти</div>
+              <div class="link__title">@lang('auth.sign_in')</div>
             </a>
-            <a href="{{ route('register') }}" class="btn btn-small btn-fill-white header__controls-btn">Регистрация</a>
+            <a href="{{ route('register') }}" class="btn btn-small btn-fill-white header__controls-btn">@lang('auth.sign_up')</a>
           </div>
         </div>
       </div>
@@ -63,7 +63,7 @@
       <div class="container">
         <div class="timer__wrap">
           <h2 class="timer__title">
-            До запуска проекта 
+            @lang('index.time_before_start')
           </h2>
           <div class="timer__items">
             <div class="timer__item timer__days">00</div>
@@ -77,12 +77,6 @@
     </section>
     <section class="invest">
       <div class="container">
-        <!-- <div class="invest__top">
-          <div class="invest__top-title">
-            <h1>Инвестируй сегодня. Будь уверен в завтра.</h1>
-          </div>
-          <a href="#" class="btn btn-round btn-round-small invest__top-btn">Инвестировать</a>
-        </div> -->
         <div class="slider invest__slider">
           <div class="slider__btns invest__slider-btns">
             <button class="slider__btn slider__btn-prev js-invest-carousel-prev"></button>
@@ -93,8 +87,8 @@
               <div class="swiper-slide">
                 <div class="invest-slide">
                   <div class="invest-slide__content">
-                    <div class="h2 invest-slide__title">Стань частью World Smart и получи уникальные бонусы!<br>Количество регистраций ограничено</div>
-                    <div class="invest-slide__descr">Ознакомьтесь с вариантами инвестиций, которые мы предлагаем партнерам</div>
+                    <div class="h2 invest-slide__title">@lang('index.text1')<br>@lang('index.text2')</div>
+                    <div class="invest-slide__descr">@lang('index.text3')</div>
                   </div>
                   <img src="/img/new/example/invest-img.png" alt="alt" class="invest-slide__image">
                 </div>
@@ -102,8 +96,8 @@
               <div class="swiper-slide">
                 <div class="invest-slide">
                   <div class="invest-slide__content">
-                    <div class="h2 invest-slide__title">ТОП-4 направлений инвестиций в 2024</div>
-                    <div class="invest-slide__descr">Ознакомьтесь с вариантами инвестиций, которые мы предлагаем партнерам</div>
+                    <div class="h2 invest-slide__title">@lang('index.text4')</div>
+                    <div class="invest-slide__descr">@lang('index.text5')</div>
                   </div>
                   <img src="/img/new/example/invest-img.png" alt="alt" class="invest-slide__image">
                 </div>
@@ -114,15 +108,15 @@
         <div class="invest__advantages">
           <div class="element-blur advantage invest-advantage">
             <img src="/img/new/icons/icon-sale-round-accent.svg" alt="alt" class="advantage__img">
-            <div class="advantage__title">Ежедневное начисление процентов</div>
+            <div class="advantage__title">@lang('index.text6')</div>
           </div>
           <div class="element-blur advantage invest-advantage">
             <img src="/img/new/icons/icon-exchange-round-accent.svg" alt="alt" class="advantage__img">
-            <div class="advantage__title">24/7 вывод начисленных средств</div>
+            <div class="advantage__title">24/7 @lang('index.text7')</div>
           </div>
           <div class="element-blur advantage invest-advantage">
             <img src="/img/new/icons/icon-world-round-accent.svg" alt="alt" class="advantage__img">
-            <div class="advantage__title">Работаем по всему миру</div>
+            <div class="advantage__title">@lang('index.text8')</div>
           </div>
         </div>
       </div>
@@ -134,13 +128,13 @@
             <div class="advantages__left">
               <div class="advantages__content">
                 <div class="advantages__title">
-                  <h2>Оцените преимущества</h2>
+                  <h2>@lang('index.text9')</h2>
                 </div>
-                <div class="advantages__descr">Мы перечислили лишь самые весомые преимущества, как для инвесторов, так и для партнеров, которые обеспечивают инвестиционный успех</div>
+                <div class="advantages__descr">@lang('index.text10')</div>
               </div>
               <div class="advantages__tabs">
-                <button class="advantages__tabs-item js-tabs-control active">Для инвесторов</button>
-                <button class="advantages__tabs-item js-tabs-control">Для партнеров</button>
+                <button class="advantages__tabs-item js-tabs-control active">@lang('index.text11')</button>
+                <button class="advantages__tabs-item js-tabs-control">@lang('index.text12')</button>
               </div>
             </div>
           </div>
@@ -150,27 +144,27 @@
                 <div class="advantages__items">
                   <div class="element-blur advantage advantage-square advantages__items-element">
                     <img src="/img/new/icons/icon-choise-round-accent.svg" alt="alt" class="advantage__img">
-                    <div class="advantage__title">Ежедневное начисление процентов</div>
+                    <div class="advantage__title">@lang('index.text13')</div>
                   </div>
                   <div class="element-blur advantage advantage-square advantages__items-element">
                     <img src="/img/new/icons/icon-profit-round-accent.svg" alt="alt" class="advantage__img">
-                    <div class="advantage__title">Высокая доходность вложенных средств</div>
+                    <div class="advantage__title">@lang('index.text14')</div>
                   </div>
                   <div class="element-blur advantage advantage-square advantages__items-element">
                     <img src="/img/new/icons/icon-def-round-accent.svg" alt="alt" class="advantage__img">
-                    <div class="advantage__title">Многоуровневая защита капитала</div>
+                    <div class="advantage__title">@lang('index.text15')</div>
                   </div>
                   <div class="element-blur advantage advantage-square advantages__items-element">
                     <img src="/img/new/icons/icon-safety-round-accent.svg" alt="alt" class="advantage__img">
-                    <div class="advantage__title">Юридическая безопасность деятельности</div>
+                    <div class="advantage__title">@lang('index.text16')</div>
                   </div>
                   <div class="element-blur advantage advantage-square advantages__items-element">
                     <img src="/img/new/icons/icon-ecosystem-round-accent.svg" alt="alt" class="advantage__img">
-                    <div class="advantage__title">Развитая экосистема инвестирования</div>
+                    <div class="advantage__title">@lang('index.text17')</div>
                   </div>
                   <div class="element-blur advantage advantage-square advantages__items-element">
                     <img src="/img/new/icons/icon-account-round-accent.svg" alt="alt" class="advantage__img">
-                    <div class="advantage__title">Удобный личный кабинет инвестора</div>
+                    <div class="advantage__title">@lang('index.text18')</div>
                   </div>
                 </div>
               </div>
@@ -178,27 +172,27 @@
                 <div class="advantages__items">
                   <div class="element-blur advantage advantage-square advantages__items-element">
                     <img src="/img/new/icons/icon-pa-round-accent.svg" alt="alt" class="advantage__img">
-                    <div class="advantage__title">Личный кабинет партнера</div>
+                    <div class="advantage__title">@lang('index.text19')</div>
                   </div>
                   <div class="element-blur advantage advantage-square advantages__items-element">
                     <img src="/img/new/icons/icon-support-round-accent.svg" alt="alt" class="advantage__img">
-                    <div class="advantage__title">Поддержка и обучение с наставником</div>
+                    <div class="advantage__title">@lang('index.text20')</div>
                   </div>
                   <div class="element-blur advantage advantage-square advantages__items-element">
                     <img src="/img/new/icons/icon-ref-round-accent.svg" alt="alt" class="advantage__img">
-                    <div class="advantage__title">Единое реферальное дерево</div>
+                    <div class="advantage__title">@lang('index.text21')</div>
                   </div>
                   <div class="element-blur advantage advantage-square advantages__items-element">
                     <img src="/img/new/icons/icon-shield-round-accent.svg" alt="alt" class="advantage__img">
-                    <div class="advantage__title">8 видов выгодных бонусов</div>
+                    <div class="advantage__title">@lang('index.text22')</div>
                   </div>
                   <div class="element-blur advantage advantage-square advantages__items-element">
                     <img src="/img/new/icons/icon-target-round-accent.svg" alt="alt" class="advantage__img">
-                    <div class="advantage__title">Развитая экосистема платформы</div>
+                    <div class="advantage__title">@lang('index.text23')</div>
                   </div>
                   <div class="element-blur advantage advantage-square advantages__items-element">
                     <img src="/img/new/icons/icon-clear-round-accent.svg" alt="alt" class="advantage__img">
-                    <div class="advantage__title">Прозрачность и отчетность</div>
+                    <div class="advantage__title">@lang('index.text24')</div>
                   </div>
                 </div>
               </div>
@@ -212,27 +206,22 @@
         <div class="products__container">
           <div class="products__top">
             <div class="products__top-title">
-              <h2>Инвестируя в проект, на раннем этапе, Вы получаете:</h2>
+              <h2>@lang('index.text25')</h2>
             </div>
             <div class="products__top-descr">
                 <!-- <li>При пополнении депозита до запуска проекта, вы получите следующие преимущества:</li> -->
-                <ul>  <li>Реферальный бонус 7% после старта проекта </li></ul>
+                <ul>  <li>@lang('index.text26') </li></ul>
                
            
-              <p>- При пополнении от 100$ - 500$ бонус +15% к депозиту на старте проекта</p>
-              <p>- При пополнении от 500$ - 1000$
-                Бонус +25% к депозиту на старте проекта</p>
-              <p>- При пополнении от 1000$ - 3000$ к депозиту до старта проекта
-                Бонус Air Pods</p>
-              <p>- При пополнении депозита от 3000$ - 5000$ до старта проекта
-                Бонус IPhone 15 Pro Max</p>
-              <p>- При пополнении депозита от 5000$ - 7000$ до старта проекта
-                Бонус MacBook Pro</p>
-              <p>- При пополнении депозита от 7000$ - 10000$ до старта проекта
-                Бонус путешествие на двоих</p><br>
-              После старта проекта внесенная вами сумма будет отображаться в вашем Личном кабинете, далее вы самостоятельно принимаете решение в какой продукт инвестировать.<br><br>
-              С нашими продуктами и условиями инвестирования вы можете ознакомиться ниже.<br>
-              Первые 350 человек, которые присоединятся до старта проекта с минимальным депозитом 1500$ примут участие в первой конференции компании в ОАЭ и Доминикане ( количество людей делится на две группы,на две страны), оплачивается перелет,проживание и питание (по системе All-inclusive)
+              <p>- @lang('index.text27')</p>
+              <p>- @lang('index.text28')</p>
+              <p>- @lang('index.text29')</p>
+              <p>- @lang('index.text30')</p>
+              <p>- @lang('index.text31')</p>
+              <p>- @lang('index.text32')</p><br>
+                @lang('index.text33')<br><br>
+                @lang('index.text34')<br>
+                @lang('index.text35')
             </div>
           </div>
           <div class="swiper products__elements js-products-carousel">
@@ -242,18 +231,18 @@
                   <img src="/img/new/elements/products/product-1.png" alt="alt" class="product__image" loading="lazy">
                   <div class="product__title">Starter</div>
                   <div class="product__row">
-                    <div class="product__row-title">срок</div>
-                    <div class="product__row-descr">100 дней</div>
+                    <div class="product__row-title">@lang('index.term')</div>
+                    <div class="product__row-descr">100 @lang('index.days')</div>
                   </div>
                   <div class="product__row">
-                    <div class="product__row-title">Инвестиция</div>
+                    <div class="product__row-title">@lang('index.Investment')</div>
                     <div class="product__row-descr">100$ - 5.000$</div>
                   </div>
                   <div class="product__row">
-                    <div class="product__row-title">Доходность</div>
-                    <div class="product__row-descr">0.5 – 0.7% в сутки</div>
+                    <div class="product__row-title">@lang('index.profitability')</div>
+                    <div class="product__row-descr">0.5 – 0.7% @lang('index.per_day')</div>
                   </div>
-                  <a href="#" class="btn btn-big btn-fill-blue product__btn">Инвестировать</a>
+                  <a href="#" class="btn btn-big btn-fill-blue product__btn">@lang('index.Invest')</a>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -261,18 +250,18 @@
                   <img src="/img/new/elements/products/product-2.png" alt="alt" class="product__image" loading="lazy">
                   <div class="product__title">Investor</div>
                   <div class="product__row">
-                    <div class="product__row-title">срок</div>
-                    <div class="product__row-descr">150 дней</div>
+                    <div class="product__row-title">@lang('index.term')</div>
+                    <div class="product__row-descr">150 @lang('index.days')</div>
                   </div>
                   <div class="product__row">
-                    <div class="product__row-title">Инвестиция</div>
+                    <div class="product__row-title">@lang('index.Investment')</div>
                     <div class="product__row-descr">5.000$ - 30.000$</div>
                   </div>
                   <div class="product__row">
-                    <div class="product__row-title">Доходность</div>
-                    <div class="product__row-descr">0.7 - 1% в сутки</div>
+                    <div class="product__row-title">@lang('index.profitability')</div>
+                    <div class="product__row-descr">0.7 - 1% @lang('index.per_day')</div>
                   </div>
-                  <a href="#" class="btn btn-big btn-fill-blue product__btn">Инвестировать</a>
+                  <a href="#" class="btn btn-big btn-fill-blue product__btn">@lang('index.Invest')</a>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -280,18 +269,18 @@
                   <img src="/img/new/elements/products/product-3.png" alt="alt" class="product__image" loading="lazy">
                   <div class="product__title">Gold</div>
                   <div class="product__row">
-                    <div class="product__row-title">срок</div>
-                    <div class="product__row-descr">175 дней</div>
+                    <div class="product__row-title">@lang('index.term')</div>
+                    <div class="product__row-descr">175 @lang('index.days')</div>
                   </div>
                   <div class="product__row">
-                    <div class="product__row-title">Инвестиция</div>
+                    <div class="product__row-title">@lang('index.Investment')</div>
                     <div class="product__row-descr">30.000$ - 50.000$</div>
                   </div>
                   <div class="product__row">
-                    <div class="product__row-title">Доходность</div>
-                    <div class="product__row-descr">1 – 1.4% в сутки</div>
+                    <div class="product__row-title">@lang('index.profitability')</div>
+                    <div class="product__row-descr">1 – 1.4% @lang('index.per_day')</div>
                   </div>
-                  <a href="#" class="btn btn-big btn-fill-blue product__btn">Инвестировать</a>
+                  <a href="#" class="btn btn-big btn-fill-blue product__btn">@lang('index.Invest')</a>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -299,18 +288,18 @@
                   <img src="/img/new/elements/products/product-4.png" alt="alt" class="product__image" loading="lazy">
                   <div class="product__title">VIP</div>
                   <div class="product__row">
-                    <div class="product__row-title">срок</div>
-                    <div class="product__row-descr">230 дней</div>
+                    <div class="product__row-title">@lang('index.term')</div>
+                    <div class="product__row-descr">230 @lang('index.days')</div>
                   </div>
                   <div class="product__row">
-                    <div class="product__row-title">Инвестиция</div>
-                    <div class="product__row-descr">от 50.000$</div>
+                    <div class="product__row-title">@lang('index.Investment')</div>
+                    <div class="product__row-descr">@lang('index.time_before_start')от 50.000$</div>
                   </div>
                   <div class="product__row">
-                    <div class="product__row-title">Доходность</div>
-                    <div class="product__row-descr">2% в сутки</div>
+                    <div class="product__row-title">@lang('index.profitability')</div>
+                    <div class="product__row-descr">2% @lang('index.per_day')</div>
                   </div>
-                  <a href="#" class="btn btn-big btn-fill-blue product__btn">Инвестировать</a>
+                  <a href="#" class="btn btn-big btn-fill-blue product__btn">@lang('index.Invest')</a>
                 </div>
               </div>
             </div>
@@ -322,7 +311,7 @@
     <section class="fund">
       <div class="container">
         <div class="fund__title">
-          <h3>Бонусы за реферальный оборот</h3>
+          <h3>@lang('index.text36')</h3>
         </div>
         <div class="fund__container">
           <div class="row">
@@ -355,7 +344,7 @@
                     <img src="/img/new/elements/fund/image-airplane.png" alt="alt" class="fund__item-image" loading="lazy">
                     <div class="fund__item-content">
                       <div class="fund__item-price">$ 50 000</div>
-                      <div class="fund__item-info">Путешествие в Дубаи на 2-их</div>
+                      <div class="fund__item-info">@lang('index.text37')</div>
                     </div>
                   </div>
                 </div>
@@ -369,28 +358,28 @@
                     <img src="/img/new/elements/fund/image-tesla.png" alt="alt" class="fund__item-image" loading="lazy">
                     <div class="fund__item-content">
                       <div class="fund__item-price">$ 130 000</div>
-                      <div class="fund__item-info">Автомобиль Tesla</div>
+                      <div class="fund__item-info">@lang('index.text38') Tesla</div>
                     </div>
                   </div>
                   <div class="element-blur fund__item">
                     <img src="/img/new/elements/fund/image-merc.png" alt="alt" class="fund__item-image" loading="lazy">
                     <div class="fund__item-content">
                       <div class="fund__item-price">$ 290 000</div>
-                      <div class="fund__item-info">Автомобиль люкс класса</div>
+                      <div class="fund__item-info">@lang('index.text39')</div>
                     </div>
                   </div>
                   <div class="element-blur fund__item">
                     <img src="/img/new/elements/fund/image-house.png" alt="alt" class="fund__item-image" loading="lazy">
                     <div class="fund__item-content">
                       <div class="fund__item-price">$ 550 000</div>
-                      <div class="fund__item-info">Апартаменты стоимостью $100 000</div>
+                      <div class="fund__item-info">@lang('index.text40') $100 000</div>
                     </div>
                   </div>
                   <div class="element-blur fund__item">
                     <img src="/img/new/elements/fund/image-crown.png" alt="alt" class="fund__item-image" loading="lazy">
                     <div class="fund__item-content">
                       <div class="fund__item-price">$ 888 000</div>
-                      <div class="fund__item-info">Статус VIP (реферальная система 8%)</div>
+                      <div class="fund__item-info">@lang('index.text41')</div>
                     </div>
                   </div>
                 </div>
@@ -404,27 +393,27 @@
       <div class="container">
         <div class="question__container">
           <div class="c-white question__title">
-            <h2>Остались вопросы?</h2>
+            <h2>@lang('index.text42')</h2>
           </div>
-          <div class="c-white question__descr">Задайте их нашему эксперту</div>
+          <div class="c-white question__descr">@lang('index.text43')</div>
           <form class="question__form">
             <div class="question__form-left">
               <label class="input question__form-field">
-                <span class="c-white input__title">Имя</span>
-                <input type="text" name="user_name" class="input__field input__big element-blur" placeholder="Представьтесь, пожалуйста">
+                <span class="c-white input__title">@lang('index.text44')</span>
+                <input type="text" name="user_name" class="input__field input__big element-blur" placeholder="@lang('index.text45')">
               </label>
               <label class="input question__form-field">
-                <span class="c-white input__title">Электронная почта</span>
+                <span class="c-white input__title">@lang('index.text46')</span>
                 <input type="email" name="user_email" class="input__field input__big element-blur" placeholder="yourmail@gmail.com">
               </label>
               <label class="input question__form-field">
-                <span class="c-white input__title">Введите ваш вопрос</span>
-                <textarea name="user_text" id="" class="input__field input__big element-blur" placeholder="Ваш вопрос"></textarea>
+                <span class="c-white input__title">@lang('index.text47')</span>
+                <textarea name="user_text" id="" class="input__field input__big element-blur" placeholder="@lang('index.text48')"></textarea>
               </label>
             </div>
             <div class="question__form-right">
               <button class="btn btn-round btn-round-middle btn-round-white question__form-submit">
-                <span class="text-grad">Свяжитесь со мной</span>
+                <span class="text-grad">@lang('index.text49')</span>
               </button>
             </div>
           </form>
@@ -442,7 +431,7 @@
                 <img src="/img/new/logo-accent.svg" alt="World Smart" class="logo__img">
               </a>
               <div class="footer__content-descr">
-                Международная инвестиционная платформа с реальными отзывами
+              @lang('index.text50')
               </div>
               <div class="socials footer__content-socials">
                 <a href="#" class="socials__item socials__item-telegram" target="_blank"></a>
@@ -452,11 +441,11 @@
           </div>
           <div class="col-6 col-lg-3">
             <div class="footer__col">
-              <div class="footer__col-title">Навигация</div>
+              <div class="footer__col-title">@lang('index.text51')</div>
               <div class="footer__col-content">
                 <nav class="footer__col-nav">
                   <ul>
-                    <li><a href="main.html">Главная</a></li>
+                    <li><a href="main.html">@lang('index.text52')</a></li>
                     
                   </ul>
                 </nav>
@@ -465,11 +454,11 @@
           </div>
           <div class="col-6 col-lg-3">
             <div class="footer__col">
-              <div class="footer__col-title">Пользователям</div>
+              <div class="footer__col-title">@lang('index.text53')</div>
               <div class="footer__col-content">
                 <nav class="footer__col-nav">
                   <ul>
-                    <li><a href="account.html">Личный кабинет</a></li>
+                    <li><a href="account.html">@lang('index.text54')</a></li>
                    
                   </ul>
                 </nav>
@@ -478,7 +467,7 @@
           </div>
           <div class="col-md-6 col-lg-3">
             <div class="footer__col">
-              <div class="footer__col-title">Связь с нами и подписка</div>
+              <div class="footer__col-title">@lang('index.text55')</div>
               <div class="footer__col-content">
                 <a href="tel:+780444200420" class="link link-default footer__col-phone">+78 044 420 0 420</a>
               </div>
@@ -491,13 +480,13 @@
       <div class="container">
         <div class="row">
           <div class="col-6 col-md-3">
-            <div class="footer__bottom-policy">2024 © Все права защищены</div>
+            <div class="footer__bottom-policy">2024 © @lang('index.text56')</div>
           </div>
           <div class="col-6 col-md-3">
-            <a href="policy.html" class="link link-default-lt footer__bottom-link">Политика конфидиенцальности</a>
+            <a href="policy.html" class="link link-default-lt footer__bottom-link">@lang('index.text57')</a>
           </div>
           <div class="col-6 col-md-3">
-            <a href="cookie.html" class="link link-default-lt footer__bottom-link">Правила использования и coockies</a>
+            <a href="cookie.html" class="link link-default-lt footer__bottom-link">@lang('index.text58')</a>
           </div>
         </div>
       </div>

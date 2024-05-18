@@ -34,26 +34,26 @@
 			<div class="col-lg-7">
 				<div class="page__top">
 					<div class="h1-small page__title">
-						<h1>Логин</h1>
+						<h1>@lang('auth.your_login')</h1>
 					</div>
 				</div>
 				<div class="register__more content">
-					<p>Введите Ваши данные для авторизации на сайте</p>
+					<p>@lang('auth.sign_in_description')</p>
 				</div>
 				<form class="register__form f" action="{{ route('login') }}" method="POST"> 
 				@csrf
 					<label class="input register__form-field">
-						<span class="input__title">Логин</span>
-						<input type="text" name="login" class="input__field input__big element-blur input__field-blue" placeholder="Введите логин">
+						<span class="input__title">@lang('auth.your_login')</span>
+						<input type="text" name="login" class="input__field input__big element-blur input__field-blue" placeholder="@lang('auth.enter_login')">
 						@error('login')
 						<div class="input__error">{{ $message }}</div>
 						@enderror 
 					</label>
 					<label class="input register__form-field js-input-password">
-						<span class="input__title">Пароль</span>
+						<span class="input__title">@lang('auth.your_password')</span>
 						<span class="input__field-wrapper">
 							<img src="/img/new/icons/icon-lock-accent.svg" alt="alt" class="input__icon">
-							<input id="password" type="password" name="password" class="input__field input__big element-blur input__field-blue js-input-password-field" placeholder="Введите пароль">
+							<input id="password" type="password" name="password" class="input__field input__big element-blur input__field-blue js-input-password-field" placeholder="@lang('auth.enter_password_sign_in')">
 							<span class="input__control js-input-password-toggler icon-mask"></span> 
 							@error('password') 
 							<div class="input__error">{{ $message }}</div> 
@@ -61,15 +61,15 @@
 						</span>
 					</label>
 					<div class="register__submit-box">
-						<input type="submit" value="Войти" class="btn btn-big btn-fill-blue register__submit">
+						<input type="submit" value="@lang('auth.sign_in')" class="btn btn-big btn-fill-blue register__submit">
 						<a href="{{ route('forgot-password.index') }}" class="f-link-forgot">@lang('auth.forgot_password')</a>
 					</div>
 				</form>
 			</div>
 			<div class="col-lg-5">
 				<div class="register__sidebar c-white">
-					<div class="h3 register__sidebar-title">У вас ещё нет учётной записи?</div>
-					<div class="register__sidebar-descr">Заполните свои персональные данные и&nbsp;начните инвестировать и&nbsp;зарабатывать с&nbsp;нами!</div>
+					<div class="h3 register__sidebar-title">@lang('auth.no_account')</div>
+					<div class="register__sidebar-descr">@lang('auth.no_account_description')</div>
 					<a href="{{ route('register') }}" class="btn btn-big btn-block btn-fill-white register__sidebar-btn">@lang('auth.sign_up')</a>
 				</div>
 			</div>
