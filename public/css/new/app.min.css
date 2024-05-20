@@ -10449,7 +10449,8 @@ h3 {
 
 .register__info-title {
     font-size: 14px;
-    margin-bottom: 4px
+    margin-bottom: 4px;
+    text-align: center; 
 }
 
 .register__info-value {

@@ -83,7 +83,7 @@
                                                             </form>
                                                         </div>
                                                     </div>
-                                                </div><!-- modal -->
+                                                </div>
                                             </div>
                                         @else
                                             —

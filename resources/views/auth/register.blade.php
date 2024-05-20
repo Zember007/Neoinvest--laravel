@@ -94,8 +94,11 @@
 						<h1>@lang('auth.sign_up')</h1>
 					</div>
 					<div class="register__info">
-						<div class="register__info-title">@lang('auth.sign_up_for_link')</div>
-						<div class="register__info-value">konstantin.konstantinovich</div>
+                    @if(request('ref'))  
+                    <div class="register__info-title">@lang('auth.sign_up_for_link')</div>
+					<div class="register__info-value">{{request('ref')}}</div>  
+                    <input type="hidden" name="referrer_id" value="{{ request('ref') }}">                     
+                    @endif						
 					</div>
 				</div>
 				<div class="register__more content">

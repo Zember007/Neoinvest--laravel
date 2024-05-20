@@ -1,4 +1,4 @@
-<header class="h">
+<!-- <header class="h">
     <div class="h-block">
         <a href="/">
             <img src="/assets/logo.svg" alt="Neo Invest" class="h-logo">
@@ -40,4 +40,37 @@
                   d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"></path>
         </svg>
     </div>
+</header> -->
+
+<header class="header">
+	<div class="container">
+		<div class="row g-0 align-items-center justify-content-between">
+			<div class="col-auto">
+				<div class="header__main">
+					<button class="sandwich header__sandwich js-toggle-menu">
+						<span class="sandwich__inner"></span>
+					</button>
+					<a href="/" class="logo header__logo">
+						<img src="/img/new/logo-accent.svg" alt="World Smart" class="logo__img">
+					</a>
+					<nav class="header__nav">
+						<ul>
+							<li><a href="about.html">О нас</a></li>
+							<li><a href="tools.html" class="active">Инструменты</a></li>
+							<li><a href="referals.html">Рефералы</a></li>
+							<li><a href="partners.html">Партнерство</a></li>
+							<li><a href="review.html">Отзывы</a></li>
+							<li><a href="news.html">Акции🔥</a></li>
+						</ul>
+						<!-- <div class="lang header__lang">
+							<a href="#" class="lang__control active">ру</a>
+							<a href="#" class="lang__control">eng</a>
+						</div> -->
+                        @include('layouts.partials.header.lang')
+					</nav>
+				</div>
+			</div>
+
+		</div>
+	</div>
 </header>

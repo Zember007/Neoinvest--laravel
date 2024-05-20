@@ -8,8 +8,9 @@
 
     <title>@yield('title') — {{ config('app.name', 'Laravel') }}</title>
 
-    <link rel="stylesheet" href="{{ asset('css/normalize.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/styles.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/new/app.min.css') }}">
+    <!-- <link rel="stylesheet" href="{{ asset('css/normalize.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/styles.min.css') }}"> -->
     <style>
         .undisguise {
             background: white;
@@ -27,7 +28,7 @@
 
     @livewireStyles
 
-    <script src="{{ mix('js/app.js') }}" defer></script>
+    <!-- <script src="{{ mix('js/app.js') }}" defer></script>
     <script src="{{ asset('js/dropdowns.js') }}" defer></script>
     <script src="{{ asset('js/linkCopy.js') }}" defer></script>
     <script src="{{ asset('js/mobileMenu.js') }}" defer></script>
@@ -38,33 +39,40 @@
     <script src="{{ asset('js/promoProgressBar.js') }}" defer></script>
     <script src="{{ asset('js/rangeInput.js') }}" defer></script>
     <script src="{{ asset('js/switch.js') }}" defer></script>
-    <script src="{{ asset('js/tableScroll.js') }}" defer></script>
+    <script src="{{ asset('js/tableScroll.js') }}" defer></script> -->
+    <script src="{{ asset('js/new/libs.min.js') }}" defer></script>
+    <script src="{{ asset('js/new/common.js') }}" defer></script>
 
     @include('layouts.partials.analytics')
 </head>
+
 <body>
-<div class="root">
-    @if(session()->has('disguised_admin_id'))
-        <a href="{{ route('undisguise') }}" class="undisguise">
-            @lang('general.undisguise')
-        </a>
-    @endif
 
     @include('layouts.partials.header')
-    <div class="root__inner">
-        @include('layouts.partials.sidebar')
-        <div class="content main-bg">
-            {{ $slot }}
 
-            <x-notifications/>
+    <main class="main">
+        <div class="page">
+            <div class="container">
+
+
+                <div class="h1-small page__title">
+                    <h1>Личный кабинет</h1>
+                </div>
+                <div class="row">
+                    @include('layouts.partials.sidebar')
+                    <div class="col-xl-9">
+                        {{ $slot }}
+
+                        <x-notifications />
+                    </div>
+                </div>
+
+               <!--  @stack('modals') -->
+            </div>
         </div>
-    </div>
+    </main>
 
-    @stack('modals')
-</div>
-
-@livewireScripts
-<script src="{{ asset('js/timer.js') }}"></script>
-@include('layouts.partials.online-chat')
+    @include('layouts.partials.footer')
+   <!--  @livewireScripts -->
 </body>
 </html>

@@ -1,53 +1,63 @@
-<div class="modal__inner">
-    <div class="modal-title">@lang('settings.confirm_changes')</div>
 
-    <div class="f-block">
-        <div class="f-block-row">
-            <label for="current-password" class="f-label">@lang('settings.current_password')</label>
-        </div>
-        <input type="password" id="current-password" class="f-input"
-               placeholder="Введите текущий пароль" wire:model.defer="state.current_password">
+
+<div class="withdraw__row">
+    <label class="input withdraw__item js-input-password">
+        <span class="input__title">Ваш пароль</span>
+        <span class="input__field-wrapper">
+            <img src="/img/new/icons/icon-lock-accent.svg" alt="alt" class="input__icon">
+            <input type="password" name="user_password" id="current-password" wire:model.defer="state.current_password"
+                class="input__field input__big element-blur input__field-blue js-input-password-field">
+            <span class="input__control js-input-password-toggler icon-mask"></span>
         @error('current_password')
-        <div class="error-msg">{{ $message }}</div>
+            <div class="error-msg">{{ $message }}</div>
         @enderror
-    </div>
-
-    <div class="f-block">
-        <div class="f-block-row">
-            <label for="new-password" class="f-label">@lang('settings.new_password')</label>
-        </div>
-        <input type="password" id="new-password" class="f-input" placeholder="Новый пароль"
-               wire:model.defer="state.password">
+        </span>
+    </label>
+    <label class="input withdraw__item js-input-password">
+        <span class="input__title">Новый пароль</span>
+        <span class="input__field-wrapper">
+            <img src="/img/new/icons/icon-lock-accent.svg" alt="alt" class="input__icon">
+            <input type="password" name="user_password_new" id="new-password" wire:model.defer="state.password"
+                class="input__field input__big element-blur input__field-blue js-input-password-field">
+            <span class="input__control js-input-password-toggler icon-mask"></span>
         @error('password')
-        <div class="error-msg">{{ $message }}</div>
+            <div class="error-msg">{{ $message }}</div>
         @enderror
-    </div>
+        </span>
+    </label>
+    <label class="input withdraw__item js-input-password">
+        <span class="input__title">Новый пароль</span>
+        <span class="input__field-wrapper">
+            <img src="/img/new/icons/icon-lock-accent.svg" alt="alt" class="input__icon">
+            <input type="password" name="user_password_repeat" id="new-password-confirm"
+                class="input__field input__big element-blur input__field-blue js-input-password-field" wire:model.defer="state.password_confirmation">
+            <span class="input__control js-input-password-toggler icon-mask"></span>
 
-    <div class="f-block">
-        <div class="f-block-row">
-            <label for="new-password-confirm" class="f-label">@lang('settings.confirm_password')</label>
-        </div>
-        <input type="password" id="new-password-confirm" class="f-input" placeholder="Новый пароль"
-               wire:model.defer="state.password_confirmation">
         @error('password_confirmation')
-        <div class="error-msg">{{ $message }}</div>
+            <div class="error-msg">{{ $message }}</div>
         @enderror
-    </div>
+        </span>
+    </label>
 
-    <div class="f-block">
-        <div class="f-block-row">
-            <label for="code" class="f-label">@lang('settings.confirmation_code')</label>
-        </div>
-        <input type="text" id="code" class="f-input recovery-code" placeholder="Введите код"
-               wire:model.defer="state.code">
+    <label class="input withdraw__item js-input-password">
+        <span class="input__title">@lang('settings.confirmation_code')</span>
+        <span class="input__field-wrapper">
+            <input type="text" name="user_password_repeat" id="new-password-confirm" id="code" wire:model.defer="state.code"
+                class="input__field input__big element-blur input__field-blue js-input-password-field" wire:model.defer="state.password_confirmation">            
         @error('code')
-        <div class="error-msg">{{ $message }}</div>
+            <div class="error-msg">{{ $message }}</div>
         @enderror
 
         @livewire('request-verification-code')
+        @error('password_confirmation')
+            <div class="error-msg">{{ $message }}</div>
+        @enderror
+        </span>
+    </label>
+     
+    <div class="withdraw__item">
+        <input type="submit" value="Изменить пароль"
+            class="btn btn-strong btn-fill-blue-accent withdraw__submit withdraw__item-submit" wire:click="changePassword" wire:loading.attr="disabled">
+        <a href="forgot.html" class="link link-line link-blue link-line-blue withdraw__item-link">Забыл пароль</a>
     </div>
-
-    <button class="btn btn__submit recovery-btn" wire:click="changePassword" wire:loading.attr="disabled">
-        @lang('general.save')
-    </button>
 </div>

@@ -11,7 +11,7 @@
     ]
 @endphp
 
-<div class="sb">
+<!-- <div class="sb">
     <div class="sb-bar _lg-hidden">
 
         <div class="sb-bar-row sb-bar-block">
@@ -65,9 +65,20 @@
             @csrf
         </form>
     </nav>
-    <div class="infoblock">
-        <img src="/assets/tech-support.png" alt="tech support" class="infoblock-icon">
-        <div class="infoblock-title">@lang('general.support_title')</div>
-        <div class="infoblock-desc">@lang('general.support_description')</div>
-    </div>
-</div>
+</div> -->
+
+<div class="col-xl-3">
+				<div class="account__sidebar no-scrollbar">
+                
+					<ul>
+                    @foreach($items as $item)
+                            <li>
+                                <a href="{{ route($item) }}" class="element-blur @if(request()->routeIs($item)) active @endif">
+                                    <div class="account__sidebar-icon account__sidebar-profile icon-mask"></div>
+                                    <div class="account__sidebar-title">@lang("$item.title")</div>
+                                </a>
+                            </li>
+                    @endforeach
+					</ul>
+				</div>
+			</div>

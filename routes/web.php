@@ -19,9 +19,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [IndexController::class, 'index']);
 Route::post('switch-language', SwitchLanguage::class)->name('switch-language');
-Route::get('ref/{id}', function ($id) {
-    return redirect()->route('register', ['ref' => $id]);
-})->name('ref');
+
+Route::get('ref/{id}', [ReferralSystemController::class, 'redirect'])->name('ref');
 
 Route::middleware(['auth', 'verified'])->group(function () {
     // User
