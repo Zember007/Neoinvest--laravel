@@ -22,12 +22,20 @@ class InvestmentController extends Controller
     {
         $packets = $request->user()->packets;
         $packetOptions = PacketOption::where('status', '!=', PacketOption::STATUS_HIDDEN)->get();
-        $history = $this->investmentService->getHistory($request->user());
 
         return view('investments')->with(compact(
             'packets',
             'packetOptions',
-            'history',
+        ));
+    }
+
+    public function index_history(Request $request)
+    {
+        
+        $history = $this->investmentService->getHistory($request->user());
+
+        return view('my-investments')->with(compact(
+            'history'
         ));
     }
 

@@ -8,7 +8,8 @@
 
     <title>@yield('title') — {{ config('app.name', 'Laravel') }}</title>
 
-    <link rel="stylesheet" href="{{ asset('css/new/app.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/new/app.min.css?v=2') }}">
+    <link rel="stylesheet" href="{{ asset('css/new/style.promo.css') }}">
     <!-- <link rel="stylesheet" href="{{ asset('css/normalize.css') }}">
     <link rel="stylesheet" href="{{ asset('css/styles.min.css') }}"> -->
     <style>
@@ -28,7 +29,7 @@
 
     @livewireStyles
 
-    <!-- <script src="{{ mix('js/app.js') }}" defer></script>
+    <script src="{{ mix('js/app.js') }}" defer></script>
     <script src="{{ asset('js/dropdowns.js') }}" defer></script>
     <script src="{{ asset('js/linkCopy.js') }}" defer></script>
     <script src="{{ asset('js/mobileMenu.js') }}" defer></script>
@@ -39,9 +40,9 @@
     <script src="{{ asset('js/promoProgressBar.js') }}" defer></script>
     <script src="{{ asset('js/rangeInput.js') }}" defer></script>
     <script src="{{ asset('js/switch.js') }}" defer></script>
-    <script src="{{ asset('js/tableScroll.js') }}" defer></script> -->
+    <script src="{{ asset('js/tableScroll.js') }}" defer></script>
     <script src="{{ asset('js/new/libs.min.js') }}" defer></script>
-    <script src="{{ asset('js/new/common.js') }}" defer></script>
+    <script src="{{ asset('js/new/common.js?v=2') }}" defer></script>
 
     @include('layouts.partials.analytics')
 </head>
@@ -54,10 +55,21 @@
         <div class="page">
             <div class="container">
 
+            @if(session()->has('disguised_admin_id'))
+                <a href=" {{ route('logout') }}" class="undisguise">
+                    @lang('general.undisguise')
+                </a>
+            @endif
 
                 <div class="h1-small page__title">
                     <h1>Личный кабинет</h1>
                 </div>
+               <!--  <a href="{{ route('logout') }}" 
+           class="nav-item"
+           onclick="event.preventDefault(); document.getElementById('logout-form').submit();">dsqnb</a>
+           <form action="{{ route('logout') }}" method="POST" id="logout-form">
+            @csrf 
+        </form> -->
                 <div class="row">
                     @include('layouts.partials.sidebar')
                     <div class="col-xl-9">

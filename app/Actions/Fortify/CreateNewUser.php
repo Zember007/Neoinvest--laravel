@@ -18,12 +18,14 @@ class CreateNewUser implements CreatesNewUsers
             'login' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'max:255', 'unique:users,email'],
             'password' => $this->passwordRules(),
+            'referrer_id' => ['nullable', 'integer', 'exists:users,id'],
         ])->validate();
 
         return User::create([
             'login' => $input['login'],
             'email' => $input['email'],
             'password' => Hash::make($input['password']),
+            'referrer_id' => $input['referrer_id']?$input['referrer_id']:null, 
             'register_ip_address' => ip(),
         ]);
     }

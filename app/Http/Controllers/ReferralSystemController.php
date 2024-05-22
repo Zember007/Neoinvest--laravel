@@ -7,11 +7,15 @@ use App\Models\Star;
 
 class ReferralSystemController extends Controller
 {
-    public function index()
+    public function index(User $user)
     {
         $stars = Star::all();
 
-        return view('referral-system')->with(compact('stars'));
+        $referrals = User::query()
+                ->where('referrer_id', auth()->user()->id)  
+                ->get();
+
+        return view('referral-system')->with(compact('stars', 'referrals'));
     }
 
     public function redirect($id)
@@ -20,6 +24,6 @@ class ReferralSystemController extends Controller
                 ->where('id', $id) 
                 ->first();
 
-        return redirect()->route('register', ['ref' => $user->email?$user->email:$user->login]); 
+        return redirect()->route('register', ['ref' => $user->email?$user->email:$user->login,'ref_id' => $id]);  
     }
 }

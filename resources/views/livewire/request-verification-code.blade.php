@@ -1,5 +1,5 @@
 <button type="button"
-        class="btn btn__send send-timer"
+        class="btn btn-small btn-fill-white header__controls-btn"
         wire:click="requestCode"
         wire:loading.attr="disabled"
         x-data="timer($wire.cooldown, 60)"

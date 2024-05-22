@@ -1,12 +1,10 @@
 @section('title')
     @lang('investments.title')
 @endsection
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <x-app-layout>
-    <div class="content-row profile-row">
-        @include('layouts.partials.container.user-hero')
 
-        <div class="inv__wrapper">
+
             @if($packets->count() > 0)
                 <div class="inv">
                     <div class="inv-title">@lang('investments.your_packets')</div>
@@ -97,114 +95,55 @@
                 </div>
             @endif
 
-            <div class="inv">
-                <div class="inv-title">@lang('investments.buy_packets')</div>
-                <div class="inv-row">
-                    @foreach($packetOptions as $packetOption)
-                        <div class="inv-card @if($packetOption->is_disabled) inv-card_disabled @endif">
-                            @if($packetOption->is_disabled)
-                                <div class="inv-card-placeholder">@lang('investments.coming_soon')</div>
-                            @endif
+            <div class="account-plans">
+							<div class="products__container">
+								<div class="products__top">
+									<div class="products__top-title">
+										<h2>Инвестируйте в самый выгодный продукт</h2>
+									</div>
+									<div class="products__top-descr">Линейка продуктов разработана так, что каждый
+										инвестирует в самые перспективные продукты для&nbsp;максимальной отдачи от
+										инвестиций </div>
+								</div>
+								<div class="swiper products__elements js-products-carousel">
+									<div class="swiper-wrapper">
+                                    @foreach($packetOptions as $packetOption) 
+                     
+                     
+										<div class="swiper-slide" id="{{$packetOption->id}}">
+											<div class="element-blur product products__elements-item">
+												<img src="/img/new/elements/products/product-{{$packetOption->name}}.png" alt="alt"
+													class="product__image" loading="lazy">
+												<div class="product__title">{{$packetOption->name}}</div>
+												<div class="product__row">
+													<div class="product__row-title">срок</div>
+													<div class="product__row-descr">{{$packetOption->duration_days}} дней</div>
+												</div>
+												<div class="product__row"> 
+													<div class="product__row-title">Инвестиция</div>
+													<div class="product__row-descr">@if(!$packetOption->max_invest)от {{$packetOption->min_invest}}$ @else {{$packetOption->min_invest}}$ - {{$packetOption->max_invest}}$ @endif</div>
+												</div>
+												<div class="product__row">
+													<div class="product__row-title">Доходность</div>
+													<div class="product__row-descr">{{$packetOption->percentage_min}}@if($packetOption->percentage_max) – {{$packetOption->percentage_max}}@endif% в сутки</div> 
+												</div>
+												<a href="#"
+													class="btn btn-big btn-fill-blue product__btn">Инвестировать</a>                                                                                                    
+											</div>
+										</div>
 
-                            @if($packetOption->is_disabled)
-                                <div class="inv-card-backdrop">
-                                    @endif
+                                        @endforeach										
+									</div>
+								</div>								
+							</div>
+						</div>
+                         
+                        <x-modals.invest :packet-options="$packetOptions">
+                                </x-modals.invest>
 
-                                    <img src="/assets/package-neo-{{ $packetOption->name }}.png"
-                                         alt="{{ $packetOption->name }}"
-                                         class="inv-card-icon">
-                                    <div class="inv-card-title">@lang('investments.packets.' . $packetOption->name)</div>
-                                    <div class="inv-card-row">
-                                        <div class="inv-card-label">@lang('investments.expiration_date'):</div>
-                                        <div class="inv-card-value">
-                                            @if($packetOption->is_indefinite)
-                                                @lang('investments.unlimited')
-                                            @else
-                                                {{ $packetOption->duration_days }} @lang('investments.days')
-                                            @endif
-                                        </div>
-                                    </div>
-                                    <div class="inv-card-row">
-                                        <div class="inv-card-label">@lang('investments.min_investment_sum'):</div>
-                                        <div class="inv-card-value">{{ $packetOption->min_invest }} USDT</div>
-                                    </div>
-                                    <div class="inv-card-row">
-                                        <div class="inv-card-label">@lang('investments.daily_percentage'):</div>
-                                        <div class="inv-card-value">{{ $packetOption->percentage }}
-                                            % @lang('investments.weekdays_only')</div>
-                                    </div>
-                                    <div class="inv-card-row">
-                                        <div class="inv-card-label">@lang('investments.earnings'):</div>
-                                        <div class="inv-card-value">@lang('investments.daily')</div>
-                                    </div>
-                                    <div class="inv-card-row">
-                                        <div class="inv-card-label">@lang('investments.payback'):</div>
-                                        <div class="inv-card-value">
-                                            @if($packetOption->is_refundable)
-                                                @lang('general.yes')
-                                            @else
-                                                @lang('general.no')
-                                            @endif
-                                            <div class="hint hint__inv-card">
-                                                <div class="hint__text">
-                                                    @if($packetOption->is_refundable)
-                                                        @lang('investments.refundable_hint')
-                                                    @else
-                                                        @lang('investments.non_refundable_hint')
-                                                    @endif
-                                                </div>
-                                                <img src="/assets/icon-question.svg" alt="more">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <x-modals.invest :packet-option="$packetOption" :is-reinvesting="false"
-                                                     :packet="null"
-                                                     class="inv-card-btn">
-                                        <div class="btn btn__submit btn_blue btn-modal"
-                                             data-modal="buy_package_infinity">
-                                            @lang('investments.buy')
-                                        </div>
-                                    </x-modals.invest>
+               
 
-                                    @if($packetOption->is_disabled)
-                                </div>
-                                @endif
-                        </div>
-                    @endforeach
-                </div>
-            </div>
-
-                <div class="inv" style="max-height: 600px; overflow-y: auto">
-                    <div class="inv-title">@lang('investments.finances_history')</div>
-                    @forelse($history as $historyEntry)
-                        <div class="fin-rep-row">
-                            <div class="fin-rep-icon">
-                                <img src="/assets/icon-download.svg" alt="adding">
-                            </div>
-                            <div class="fin-rep-label">
-                                {{ $historyEntry->get('name') }}
-                            </div>
-                            <div class="fin-rep-date">{{ $historyEntry->get('created_at')->format('d.m.Y H:i') }}</div>
-                            @if(!is_null($historyEntry->get('amount')))
-                                <div class="fin-rep-val"
-                                     style="color: @if($historyEntry->get('is_negative')) #F11818 @else #219653 @endif">
-                                    {{ $historyEntry->get('is_negative') ? '-' : '+' }} {{ format_money($historyEntry->get('amount')) }}
-                                    USDT
-                                </div>
-                            @else
-                                <div class="fin-rep-val">
-                                    —
-                                </div>
-                            @endif
-                        </div>
-                    @empty
-                        <div class="text-center">
-                            <b>@lang('finances.withdrawals_empty')</b>
-                        </div>
-                    @endforelse
-                </div>
-        </div>
-    </div>
+    
 
     @if($errors->any())
         <div class="notif active _error">

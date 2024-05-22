@@ -6,9 +6,9 @@ use Livewire\Component;
 use Livewire\WithFileUploads;
 
 class ProfilePictureForm extends Component
-{
-    use WithFileUploads;
+{    
 
+    use WithFileUploads;
     public $photo;
 
     protected $listeners = ['upload:finished' => 'updatePhoto'];

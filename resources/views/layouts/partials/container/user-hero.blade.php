@@ -4,7 +4,7 @@
             <div class="a1-col">
                 @livewire('sidebar-profile-picture')
                 <div class="a1-text">
-                    <div class="a1-title">{{auth()->user()->full_name }}</div>
+                    <div class="a1-title">{{auth()->user()->login }}</div>
                     <div class="a1-subtitle">@lang('general.account')</div>
                     <a href="#" class="a1-text-link link-copy link-copy-hint">
                         <div class="link-copy-hint__text">@lang('general.copied_to_clipboard')</div>

@@ -41,70 +41,9 @@
                             </div>
                             <div class="form-group">
                                 <label>@lang('referral-system.referral_bonus')</label>
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <label>1 @lang('referral-system.line')</label>
-                                                <input type="number" class="form-control" step="any"
-                                                       value="{{ $star->referral_bonus_percentage[1] ?? 0 }}"
-                                                       name="referral_bonus_percentage[1]">
-                                            </div>
-                                            <div class="col-4">
-                                                <label>2 @lang('referral-system.line')</label>
-                                                <input type="number" class="form-control" step="any"
-                                                       value="{{ $star->referral_bonus_percentage[2] ?? 0 }}"
-                                                       name="referral_bonus_percentage[2]">
-                                            </div>
-                                            <div class="col-4">
-                                                <label>3 @lang('referral-system.line')</label>
-                                                <input type="number" class="form-control" step="any"
-                                                       value="{{ $star->referral_bonus_percentage[3] ?? 0 }}"
-                                                       name="referral_bonus_percentage[3]">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <label>4 @lang('referral-system.line')</label>
-                                                <input type="number" class="form-control" step="any"
-                                                       value="{{ $star->referral_bonus_percentage[4] ?? 0 }}"
-                                                       name="referral_bonus_percentage[4]">
-                                            </div>
-                                            <div class="col-4">
-                                                <label>5 @lang('referral-system.line')</label>
-                                                <input type="number" class="form-control" step="any"
-                                                       value="{{ $star->referral_bonus_percentage[5] ?? 0 }}"
-                                                       name="referral_bonus_percentage[5]">
-                                            </div>
-                                            <div class="col-4">
-                                                <label>6 @lang('referral-system.line')</label>
-                                                <input type="number" class="form-control" step="any"
-                                                       value="{{ $star->referral_bonus_percentage[6] ?? 0 }}"
-                                                       name="referral_bonus_percentage[6]">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <label>7 @lang('referral-system.line')</label>
-                                                <input type="number" class="form-control" step="any"
-                                                       value="{{ $star->referral_bonus_percentage[7] ?? 0 }}"
-                                                       name="referral_bonus_percentage[7]">
-                                            </div>
-                                            <div class="col-4">
-                                                <label>8 @lang('referral-system.line')</label>
-                                                <input type="number" class="form-control" step="any"
-                                                       value="{{ $star->referral_bonus_percentage[8] ?? 0 }}"
-                                                       name="referral_bonus_percentage[8]">
-                                            </div>
-                                            <div class="col-4">
-                                                <label>9 @lang('referral-system.line')</label>
-                                                <input type="number" class="form-control" step="any"
-                                                       value="{{ $star->referral_bonus_percentage[9] ?? 0 }}"
-                                                       name="referral_bonus_percentage[9]">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <input type="number" class="form-control" step="any"
+                                                       value="{{ $star->referral_bonus_percentage[0] }}" 
+                                                       name="referral_bonus_percentage">
                             </div>
                         </div>
 

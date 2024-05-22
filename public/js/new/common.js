@@ -202,7 +202,7 @@ $(function() {
 
 	// Invest item visability
 	$('.product__btn').on('click', function() {
-		$(this).closest('.col-xl-9').css('display', 'none');
+		$(this).closest('.account-plans').css('display', 'none');
 		for ( let item of $('.invest-item') ) {
 			if ( item.id === $(this).closest('.swiper-slide')[0].id ) {
 				console.log(item)

@@ -28,7 +28,7 @@ class GenerateInstagramStory extends Controller
     {
         return function (AbstractFont $font) {
             $font->file(public_path('fonts/Inter-Bold.ttf'));
-            $font->size(52);
+            $font->size(40);
         };
     }
 
@@ -64,7 +64,7 @@ class GenerateInstagramStory extends Controller
     private function insertHeader(\Intervention\Image\Image $story)
     {
         $y = 306;
-        $lines = explode("\n", wordwrap(auth()->user()->full_name, 25));
+        $lines = explode("\n", wordwrap(auth()->user()->login, 25)); 
         foreach ($lines as $line) {
             $story->text($line, 518, $y, $this->getPrimaryFont());
             $y += 60;
@@ -108,7 +108,7 @@ class GenerateInstagramStory extends Controller
 
     private function insertReferralLink(\Intervention\Image\Image $story)
     {
-        $story->text(route('ref', auth()->id()), 440, 1765, $this->getSecondaryFont(36));
+        $story->text(route('ref', auth()->id()), 440, 1765, $this->getSecondaryFont(30));
         $story->text(trans('profile.referral_link'), 566, 1824, $this->getRegularFont());
     }
 }

@@ -40,6 +40,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::post('investments/reinvest', [InvestmentController::class, 'reinvest'])->name('investments.reinvest');
     Route::post('investments/close', [InvestmentController::class, 'close'])->name('investments.close');
 
+    Route::get('my-investments', [InvestmentController::class, 'index_history'])->name('my-investments'); 
+
     // Auto program
     Route::get('auto-program', [AutoProgramController::class, 'index'])->name('auto-program');
 

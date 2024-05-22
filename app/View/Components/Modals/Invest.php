@@ -9,19 +9,13 @@ use Illuminate\View\Component;
 
 class Invest extends Component
 {
-    public PacketOption $packetOption;
-
-    public bool $isReinvesting;
-
-    public ?Packet $packet;
+    public $packetOptions;
 
     public string $formId;
 
-    public function __construct(PacketOption $packetOption, bool $isReinvesting, ?Packet $packet)
+    public function __construct($packetOptions)
     {
-        $this->packetOption = $packetOption;
-        $this->isReinvesting = $isReinvesting;
-        $this->packet = $packet;
+        $this->packetOptions = $packetOptions;  
         $this->formId = Str::random();
     }
 
